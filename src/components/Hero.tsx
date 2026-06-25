@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronDown, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const slides = [
   {
@@ -33,13 +33,6 @@ const slides = [
     service: 'Smart Home Automation',
     slogan: 'Building a Stronger Future Through Engineering',
   },
-];
-
-const stats = [
-  { v: '200+', l: 'Projects' },
-  { v: '15+', l: 'Years' },
-  { v: '2', l: 'Offices' },
-  { v: '500+', l: 'Clients' },
 ];
 
 export default function Hero() {
@@ -90,7 +83,8 @@ export default function Hero() {
       </div>
 
       {/* Hero Section */}
-      <section id="home" className="relative h-screen min-h-[580px] max-h-[860px] flex flex-col justify-end overflow-hidden pt-12">
+      <section id="home" className="relative h-screen min-h-[580px] flex flex-col justify-center overflow-hidden pt-12">
+        
         {/* Background Slides - Clean & Filterless Visual Presentation */}
         <div className="absolute inset-0 z-0">
           {slides.map((slide, index) => (
@@ -107,11 +101,11 @@ export default function Hero() {
               />
             </div>
           ))}
-          {/* subtle natural overlay layout to ensure typography readability on lighter images */}
-          <div className="absolute inset-0 bg-navy-950/20 backdrop-blur-[0.5px]" />
+          {/* Subtle natural dark overlay to ensure white typography remains completely readable against background images */}
+          <div className="absolute inset-0 bg-navy-950/40" />
         </div>
 
-        {/* Service Dots Indicator */}
+        {/* Service Dots Indicator - Restored Side Indicator Elements */}
         <div className="absolute top-1/2 right-6 -translate-y-1/2 z-20 hidden xl:flex flex-col gap-3">
           {slides.map((slide, index) => (
             <button
@@ -128,20 +122,14 @@ export default function Hero() {
         </div>
 
         {/* Content Panel Area */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-20 w-full">
-          <div className="max-w-2xl bg-navy-950/70 p-6 md:p-8 rounded-lg backdrop-blur-md border border-white/10 shadow-2xl">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-[2px] bg-amber-500" />
-              <span className="text-amber-400 font-heading font-bold text-[11px] uppercase tracking-[0.2em]">
-                {slides[current].service}
-              </span>
-            </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-2xl drop-shadow-lg">
             <h1 className="font-heading font-black text-white leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem]">
               Building a Stronger<br />
               Future Through<br />
               <span className="text-amber-400">Engineering</span>
             </h1>
-            <p className="mt-4 text-white/90 text-sm md:text-base font-medium leading-relaxed max-w-lg">
+            <p className="mt-4 text-white/95 text-sm md:text-base font-medium leading-relaxed max-w-lg">
               Premium construction, civil engineering, and infrastructure solutions across Nigeria — delivered with precision and professionalism.
             </p>
             <div className="flex flex-wrap gap-3 mt-7">
@@ -155,26 +143,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Stats bar */}
-        <div className="relative z-10 bg-navy-950 border-t border-white/10 shadow-xl">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-4 divide-x divide-white/10">
-              {stats.map(({ v, l }) => (
-                <div key={l} className="py-5 text-center">
-                  <p className="font-heading font-black text-amber-400 text-xl md:text-3xl tracking-tight">{v}</p>
-                  <p className="text-white/70 text-[10px] md:text-[11px] font-bold uppercase tracking-widest mt-0.5">{l}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <button onClick={() => scrollTo('company')}
-          className="absolute bottom-28 right-8 z-10 flex flex-col items-center gap-1.5 text-white/60 hover:text-amber-400 transition-colors group">
-          <span className="text-[10px] font-bold uppercase tracking-widest hidden md:block">Scroll</span>
-          <ChevronDown size={18} className="animate-bounce text-amber-400" />
-        </button>
       </section>
     </>
   );

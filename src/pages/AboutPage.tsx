@@ -74,9 +74,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
-                  <strong className="text-navy-900 font-bold">RBCC Engineering and Global Services Ltd</strong> is a Nigerian multidisciplinary
-                  firm specializing in building construction, mechanical and electrical (M&E) services, solar energy solutions,
-                  and smart home automation.
+                  <strong className="text-navy-900 font-bold">RBCC Engineering and Global Services Ltd</strong> is a Nigerian engineering and construction company committed to delivering high-quality, reliable, and innovative solutions across various sectors of the construction and engineering industry.
+The company provides a wide range of services, including building construction, electrical engineering services, plumbing, painting, POP installation, plastering, screeding, block work, tiling, interlocking, carpentry, project supervision, and general construction works.
+At RBCC Engineering, we are dedicated to excellence, professionalism, safety, integrity, and customer satisfaction. Our goal is to deliver projects that meet the highest standards of quality while creating lasting value for our clients and communities.
+Through skilled workmanship, technical expertise, and a commitment to continuous improvement, RBCC Engineering strives to be a trusted partner in engineering and construction, contributing to sustainable development and infrastructure growth across Nigeria.
                 </p>
                 <p>
                   Headquartered in Abuja with a regional office in Kano State, we have successfully delivered over 200 projects
@@ -104,6 +105,32 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Vision & Mission - MOVED HERE UNDER OUR STORY */}
+      <section className="py-14 md:py-16 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 border border-gray-100 p-6 md:p-8 rounded reveal">
+              <div className="w-10 h-10 bg-navy-900 flex items-center justify-center mb-4">
+                <Target size={18} className="text-amber-400" />
+              </div>
+              <h3 className="font-heading font-bold text-navy-900 text-base uppercase tracking-wide mb-3">Our Vision</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                To become a leading engineering and construction company recognized for excellence, innovation, quality, and integrity in Nigeria and beyond.
+              </p>
+            </div>
+            <div className="bg-gray-50 border border-gray-100 p-6 md:p-8 rounded reveal">
+              <div className="w-10 h-10 bg-navy-900 flex items-center justify-center mb-4">
+                <TrendingUp size={18} className="text-amber-400" />
+              </div>
+              <h3 className="font-heading font-bold text-navy-900 text-base uppercase tracking-wide mb-3">Our Mission</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                To provide professional engineering and construction services that deliver value, exceed client expectations, and contribute to sustainable development through quality workmanship, technical expertise, and exceptional service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Corporate Leadership Section */}
       <section ref={leadershipRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-gray-50 border-t border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -120,7 +147,7 @@ export default function AboutPage() {
             <div className="lg:col-span-5 relative group">
               <div className="aspect-[4/5] bg-gray-100 overflow-hidden rounded-lg relative border border-gray-200">
                 <img 
-                  src="/images/IMG-20260530-WA0037.jpg" 
+                  src="/images/C.E.O.jpg" 
                   alt="CEO / Managing Director"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
@@ -136,7 +163,7 @@ export default function AboutPage() {
                 Managing Director / CEO Message
               </span>
               <h3 className="font-heading font-black text-navy-900 text-xl md:text-2xl uppercase tracking-wide">
-                Alhaji Abba Sharada
+                Engr. Rabiu Lawan Muhammad
               </h3>
               <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5 mb-5">
                 Managing Director & CEO, RBCC Engineering
@@ -144,9 +171,9 @@ export default function AboutPage() {
               
               <div className="space-y-4 text-gray-700 text-sm leading-relaxed border-l-2 border-amber-500 pl-5 italic font-medium">
                 <p>
-                  "At RBCC Engineering, we believe that every structure we build represents a commitment to our clients
-                  and communities. Our success is measured not only by the projects we deliver, but by the relationships
-                  we build along the way."
+                  "Founder and Managing Director of RBCC Engineering and Global Services Ltd. He holds a Bachelor's Degree in Electrical and Electronics Engineering and has practical experience in engineering, construction, project management, technical design, and business development.
+He has earned various professional certifications and completed specialized training in engineering, construction, and technical disciplines. He is proficient in industry-standard software used for engineering design, lighting design, drafting, project planning, analysis, and documentation.
+Driven by excellence, integrity, and professionalism, he founded RBCC Engineering with a vision to provide reliable engineering and construction solutions that create lasting value for clients, communities, and stakeholders."
                 </p>
                 <p>
                   "We remain dedicated to raising industry standards through innovation, integrity, and an unwavering
@@ -180,34 +207,6 @@ export default function AboutPage() {
             ))}
           </div>
 
-        </div>
-      </section>
-
-      {/* Vision & Mission */}
-      <section className="py-14 md:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 border border-gray-100 p-6 md:p-8 rounded reveal">
-              <div className="w-10 h-10 bg-navy-900 flex items-center justify-center mb-4">
-                <Target size={18} className="text-amber-400" />
-              </div>
-              <h3 className="font-heading font-bold text-navy-900 text-base uppercase tracking-wide mb-3">Our Vision</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                To be Nigeria's most trusted engineering and construction partner — recognized for technical excellence,
-                innovative solutions, and infrastructure that stands the test of time.
-              </p>
-            </div>
-            <div className="bg-gray-50 border border-gray-100 p-6 md:p-8 rounded reveal">
-              <div className="w-10 h-10 bg-navy-900 flex items-center justify-center mb-4">
-                <TrendingUp size={18} className="text-amber-400" />
-              </div>
-              <h3 className="font-heading font-bold text-navy-900 text-base uppercase tracking-wide mb-3">Our Mission</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                To deliver construction and engineering projects that exceed client expectations through technical expertise,
-                disciplined project management, and an unwavering commitment to quality and safety.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

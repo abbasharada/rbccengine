@@ -8,27 +8,14 @@ const socials = [
   { icon: Facebook, href: 'https://www.facebook.com/61573990281781/' },
 ];
 
-const company = [
-  { label: 'About Us', to: '/about' },
-  { label: 'Services', to: '/services' },
-  { label: 'Projects', to: '/projects' },
-  { label: 'Careers', to: '/careers' },
-  { label: 'Contact Us', to: '/contact' },
-];
-
-const services = [
-  'Building Construction', 'Renovation', 'Electrical Engineering',
-  'Solar Energy Solutions', 'Plumbing Services', 'M&E Services',
-];
-
 export default function Footer() {
   return (
     <footer className="bg-navy-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
 
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
+          <div>
             <Link to="/" className="flex items-center gap-3 mb-4">
               <img
                 src="/images/IMG-20260529-WA0453.jpg"
@@ -41,7 +28,7 @@ export default function Footer() {
                 <p className="text-gold-400 text-[10px] tracking-widest uppercase">& Global Services Ltd</p>
               </div>
             </Link>
-            <p className="text-white/50 text-sm leading-relaxed mb-4">
+            <p className="text-white/50 text-sm leading-relaxed mb-4 max-w-sm">
               Building a Stronger Future Through Engineering. Premium construction solutions across Nigeria.
             </p>
             <div className="flex gap-2">
@@ -52,30 +39,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="font-heading font-bold text-white text-[10px] uppercase tracking-widest mb-4 pb-2 border-b border-gold-500/30">Company</h4>
-            <ul className="space-y-2.5">
-              {company.map(({ label, to }) => (
-                <li key={label}>
-                  <Link to={to} className="text-white/55 text-sm hover:text-gold-400 transition-colors">{label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="font-heading font-bold text-white text-[10px] uppercase tracking-widest mb-4 pb-2 border-b border-gold-500/30">Services</h4>
-            <ul className="space-y-2.5">
-              {services.map((s) => (
-                <li key={s}>
-                  <Link to="/services" className="text-white/55 text-sm hover:text-gold-400 transition-colors">{s}</Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Contact */}
@@ -99,6 +62,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          
         </div>
       </div>
 

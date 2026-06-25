@@ -91,7 +91,7 @@ export default function ContactPage() {
             {/* Contact Cards */}
             <div className="lg:col-span-2 space-y-4 reveal-left">
               {/* WhatsApp Quick Chat */}
-              <a href="https://wa.me/2348032570597?text=Hello%20RBCC%20Engineering%2C%20I'd%20like%20to%20enquire%20about%20your%20services."
+              <a href="https://wa.me/2349035737455?text=Hello%20RBCC%20Engineering%2C%20I'd%20like%20to%20enquire%20about%20your%20services."
                 target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-4 bg-[#25D366] text-white p-5 hover:bg-[#22c55e] transition-colors rounded shadow-sm">
                 <MessageCircle size={28} className="flex-shrink-0" />
