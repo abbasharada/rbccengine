@@ -67,11 +67,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
-              <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">Our Story</span>
-              <h2 className="font-heading font-black text-navy-900 text-2xl md:text-3xl uppercase tracking-tight mb-5">
-                Engineering Excellence<br />
-                <span className="text-amber-500">Since 2011</span>
-              </h2>
+              <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-5">Company Overview</span>
               <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
                   <strong className="text-navy-900 font-bold">RBCC Engineering and Global Services Ltd</strong> is a Nigerian engineering and construction company committed to delivering high-quality, reliable, and innovative solutions across various sectors of the construction and engineering industry.
@@ -105,7 +101,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
         </div>
       </section>
 
-      {/* Vision & Mission - MOVED HERE UNDER OUR STORY */}
+      {/* Vision & Mission */}
       <section className="py-14 md:py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6">
@@ -134,7 +130,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
       {/* Corporate Leadership Section */}
       <section ref={leadershipRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-gray-50 border-t border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="max-w-xl mb-10 reveal">
             <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">Executive Leadership</span>
             <h2 className="font-heading font-black text-navy-900 text-2xl md:text-3xl uppercase tracking-tight">
@@ -168,7 +164,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
               <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5 mb-5">
                 Managing Director & CEO, RBCC Engineering
               </p>
-              
+
               <div className="space-y-4 text-gray-700 text-sm leading-relaxed border-l-2 border-amber-500 pl-5 italic font-medium">
                 <p>
                   "Founder and Managing Director of RBCC Engineering and Global Services Ltd. He holds a Bachelor's Degree in Electrical and Electronics Engineering and has practical experience in engineering, construction, project management, technical design, and business development.
@@ -180,11 +176,25 @@ Driven by excellence, integrity, and professionalism, he founded RBCC Engineerin
                   focus on engineering excellence. When you partner with RBCC, you're choosing a team that treats every
                   project as our own."
                 </p>
+                <div className="pt-2 mt-2 border-t border-gray-100 not-italic font-normal text-gray-600 space-y-3">
+                  <p className="font-semibold text-navy-900">Welcome to RBCC Engineering and Global Services Ltd.</p>
+                  <p>
+                    Thank you for visiting our website. We are committed to delivering professional engineering, construction, and technical services with excellence, integrity, and dedication. Our goal is to provide innovative and dependable solutions that exceed expectations while maintaining the highest standards of quality, safety, and professionalism.
+                  </p>
+                  <p>
+                    We value the trust our clients place in us and look forward to building lasting relationships through exceptional service and successful project delivery.
+                  </p>
+                  <p className="text-xs font-bold text-navy-950 uppercase tracking-wide pt-1">
+                    Thank you for choosing RBCC Engineering and Global Services Ltd.<br />
+                    <span className="text-amber-600 font-heading">Engr. Rabiu Lawan Muhammad</span><br />
+                    <span className="text-gray-400 font-sans text-[10px] block">Founder & Managing Director</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Other 3 Members - Clean Name Only Layout Grid */}
+          {/* Board Members Layout Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {boardMembers.map((member, i) => (
               <div key={i} className="bg-white border border-gray-200/60 p-5 rounded-lg shadow-sm hover:border-amber-500/40 transition-all group reveal">

@@ -18,7 +18,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-3 mb-4">
               <img
-                src="/images/IMG-20260529-WA0453.jpg"
+                src="/images/logo.jpeg"
                 alt="RBCC Logo"
                 className="h-11 w-11 rounded-full object-cover border-2 border-gold-500/40"
                 onError={(e) => { e.currentTarget.src = '/logo.svg'; e.currentTarget.className = 'h-11 w-auto object-contain'; }}

@@ -4,8 +4,8 @@ import { Shield, Clock, Target, Award } from 'lucide-react';
 const stats = [
   { value: '200+', label: 'Projects' },
   { value: '15+', label: 'Years' },
-  { value: '50+', label: 'Engineers' },
-  { value: '500+', label: 'Clients' },
+  { value: '20+', label: 'Engineers' },
+  { value: '50+', label: 'Clients' },
 ];
 
 const values = [
