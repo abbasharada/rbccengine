@@ -3,12 +3,12 @@ import { Building2, Wrench, Zap, Sun, Droplets, PaintBucket, ArrowRight } from '
 import { useNavigate } from 'react-router-dom';
 
 const services = [
-  { icon: Building2, title: 'Construction', desc: 'Residential, commercial & industrial building works' },
-  { icon: Wrench, title: 'Renovation', desc: 'Structural upgrades and complete remodelling' },
-  { icon: Zap, title: 'Electrical', desc: 'Power distribution and industrial wiring' },
-  { icon: Sun, title: 'Solar Power', desc: 'On-grid, off-grid and hybrid solar systems' },
-  { icon: Droplets, title: 'Plumbing', desc: 'Water supply, drainage and sanitation' },
-  { icon: PaintBucket, title: 'Finishing', desc: 'Tiling, plastering, painting and interiors' },
+  { icon: Building2, title: 'Engineering Design', desc: 'Residential, commercial & industrial building works' },
+  { icon: Wrench, title: 'Electrical Engineering', desc: 'Structural upgrades and complete remodelling' },
+  { icon: Zap, title: 'Solar Energy Solution', desc: 'Power distribution and industrial wiring' },
+  { icon: Sun, title: 'Building Construction', desc: 'On-grid, off-grid and hybrid solar systems' },
+  { icon: Droplets, title: 'Technology', desc: 'Water supply, drainage and sanitation' },
+  { icon: PaintBucket, title: 'Finishing Works', desc: 'Tiling, plastering, painting and interiors' },
 ];
 
 export default function Services() {

@@ -8,20 +8,22 @@ const services = [
     title: 'Engineering Design & Consultancy',
     desc: 'We provide innovative, cost-effective, and standards-compliant engineering design and consultancy services, delivering safe, functional, and sustainable solutions tailored to residential, commercial, and industrial projects.',
     benefits: ['Architectural Design','Structural Design','Electrical Design','AutoCAD Drafting','BIM Modeling (Revit)','Lighting Design (DIALux)'],
-    img1: '/images/dilux.jpeg', // Main building structure with scaffolding
-    img2: '/images/dilux1.jpeg', // Workers on foundation reinforcement slab
-    fallback1: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
-    fallback2: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img1: '/images/dilux.jpeg',
+    img2: '/images/dilux1.jpeg',
+    img3: '/images/solar.jpg', 
+    img4: '/images/solar6.jpg',
+    fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Wrench,
     title: 'Electrical Engineering Services',
     desc: 'We deliver reliable electrical engineering solutions, from design and installation to testing, commissioning, maintenance, and troubleshooting, ensuring safety, efficiency, and compliance with industry standards.',
     benefits: ['Electrical Installations', 'Power Distribution Systems','Testing & Commissioning','Maintenance & Troubleshooting'],
-    img1: '/images/IMG-20260531-WA0130.jpg',
-    img2: '/images/IMG-20260530-WA0037.jpg',
-    fallback1: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
-    fallback2: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img1: '/images/solar3.jpg',
+    img2: '/images/solar1.jpeg',
+    img3: '/images/dilux.jpeg',
+    img4: '/images/dilux1.jpeg',
+    fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Zap,
@@ -30,8 +32,9 @@ const services = [
     benefits: ['Solar PV System Design','Solar Installation', 'Solar Inverter Systems', 'Battery Storage Systems','Hybrid Power Systems', 'Operation & Maintenance'],
     img1: '/images/solar.jpg',
     img2: '/images/solar1.jpeg',
-    fallback1: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=800',
-    fallback2: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img3: '/images/solar3.jpg',
+    img4: '/images/solar1.jpeg',
+    fallback: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Sun,
@@ -40,8 +43,9 @@ const services = [
     benefits: ['Residential Construction', 'Commercial Construction', 'Renovation Works', 'Site Supervision'],
     img1: '/images/build.jpeg',
     img2: '/images/build1.jpeg',
-    fallback1: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
-    fallback2: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img3: '/images/solar5.jpg',
+    img4: '/images/solar6.jpg',
+    fallback: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Droplets,
@@ -50,18 +54,20 @@ const services = [
     benefits: ['POP & Ceiling', 'Painting', 'Tiling', 'Interlocking', 'Screeding', 'Interior Finishing',],
     img1: '/images/finish.jpeg',
     img2: '/images/finish1.jpeg',
-    fallback1: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
-    fallback2: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img3: '/images/tiles.jpeg',
+    img4: '/images/tiles1.jpeg',
+    fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: ShieldCheck,
     title: 'Technology Division (Coming Soon)',
     desc: 'Our Technology Division is coming soon. Stay tuned for innovative solutions and services.',
     benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
-    img1: '/images/IMG-20260530-WA0037.jpg',
-    img2: '/images/IMG-20260531-WA0130.jpg',
-    fallback1: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
-    fallback2: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img1: '/images/solar6.jpg',
+    img2: '/images/solar2.jpg',
+    img3: '/images/solar.jpg',
+    img4: '/images/solar1.jpeg',
+    fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
 ];
 
@@ -99,25 +105,21 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section ref={servicesRef as React.RefObject<HTMLElement>} className="py-12 md:py-14 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-8">
+          <div className="space-y-12">
             {services.map((service, index) => (
-              <div key={service.title} className={`reveal grid lg:grid-cols-2 gap-6 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                
-                {/* Side-by-Side Two-Image Grid Layout */}
+              <div key={service.title} className={`reveal grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+
+                {/* 4-Image Balanced Grid Layout (2x2) */}
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <div className="grid grid-cols-2 gap-3 relative overflow-hidden">
+                  <div className="grid grid-cols-2 gap-2 relative overflow-hidden rounded-sm">
                     <div className="relative">
-                      <img src={service.img1} alt={`${service.title} perspective view`}
-                        className="w-full h-56 object-cover"
-                        onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback1; }} />
+                      <img src={service.img1} alt={`${service.title} 1`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
                       <div className="absolute top-0 left-0 w-1 h-full bg-gold-500" />
                     </div>
-                    <div>
-                      <img src={service.img2} alt={`${service.title} alternate view`}
-                        className="w-full h-56 object-cover"
-                        onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback2; }} />
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/30 to-transparent pointer-events-none" />
+                    <img src={service.img2} alt={`${service.title} 2`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
+                    <img src={service.img3} alt={`${service.title} 3`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
+                    <img src={service.img4} alt={`${service.title} 4`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/20 to-transparent pointer-events-none" />
                   </div>
                 </div>
 

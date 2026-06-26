@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
 
           {/* Logo & Corporate Branding */}
-          <Link to="/" className="flex items-center gap-3 flex-shrink-0">
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 flex-shrink-0">
             <img
               src="/images/logo.jpeg"
               alt="RBCC Engineering"
@@ -42,11 +42,13 @@ export default function Navbar() {
                 e.currentTarget.className = 'h-14 w-auto object-contain';
               }}
             />
-            <div className="hidden sm:block">
-              <div className="font-heading font-bold text-amber-400 text-[15px] tracking-wide leading-tight uppercase">
-                RBCC Engineering
+            {/* Split layout structure for clear mobile typography */}
+            <div className="flex flex-col">
+              <div className="font-heading font-black text-amber-400 text-base sm:text-[15px] tracking-wider sm:tracking-wide leading-none uppercase w-full">
+                RBCC
               </div>
-              <div className="text-amber-500 font-semibold text-[10px] tracking-widest uppercase mt-0.5">
+              <div className="text-amber-500 font-semibold text-[9px] sm:text-[10px] tracking-widest uppercase mt-0.5 leading-tight">
+                Engineering <br />
                 & Global Services Ltd
               </div>
             </div>
@@ -68,10 +70,18 @@ export default function Navbar() {
 
           {/* Right Section */}
           <div className="flex items-center gap-3">
-            <a href="tel:+2348032570597" className="hidden xl:flex items-center gap-1.5 text-white/80 hover:text-amber-400 transition-colors">
-              <Phone size={14} className="text-amber-500" />
-              <span className="font-heading font-semibold text-[11px] tracking-wide">0803 257 0597</span>
-            </a>
+            {/* Dual Phone Numbers for Desktop */}
+            <div className="hidden xl:flex flex-col items-end gap-0.5 border-r border-white/10 pr-3 mr-1">
+              <a href="tel:+2348032570597" className="flex items-center gap-1.5 text-white/80 hover:text-amber-400 transition-colors">
+                <Phone size={11} className="text-amber-500" />
+                <span className="font-heading font-semibold text-[11px] tracking-wide">0803 257 0597</span>
+              </a>
+              <a href="tel:+2349035737455" className="flex items-center gap-1.5 text-white/80 hover:text-amber-400 transition-colors">
+                <Phone size={11} className="text-amber-500" />
+                <span className="font-heading font-semibold text-[11px] tracking-wide">0903 573 7455</span>
+              </a>
+            </div>
+            
             <Link to="/contact" className="hidden sm:inline-flex btn-primary !py-2.5 !px-5 !text-[11px] font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-navy-950 transition-colors rounded">
               Get a Quote
             </Link>
@@ -83,7 +93,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden bg-navy-950 border-t border-white/10 transition-all duration-300 overflow-hidden ${mobileOpen ? 'max-h-96' : 'max-h-0'}`}>
+      <div className={`lg:hidden bg-navy-950 border-t border-white/10 transition-all duration-300 overflow-hidden ${mobileOpen ? 'max-h-[420px]' : 'max-h-0'}`}>
         <div className="px-4 py-3 space-y-0.5">
           {navItems.map((item) => (
             <Link key={item.to} to={item.to} onClick={() => setMobileOpen(false)}
@@ -91,9 +101,13 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <div className="pt-3 pb-1 border-t border-white/10 px-4">
-            <a href="tel:+2348032570597" className="flex items-center gap-2 text-white/70 text-xs font-semibold">
+          {/* Dual Phone Numbers for Mobile */}
+          <div className="pt-3 pb-1 border-t border-white/10 px-4 space-y-2">
+            <a href="tel:+2348032570597" className="flex items-center gap-2 text-white/70 text-xs font-semibold hover:text-amber-400 transition-colors">
               <Phone size={12} className="text-amber-500" /> 0803 257 0597
+            </a>
+            <a href="tel:+2349035737455" className="flex items-center gap-2 text-white/70 text-xs font-semibold hover:text-amber-400 transition-colors">
+              <Phone size={12} className="text-amber-500" /> 0903 573 7455
             </a>
           </div>
         </div>

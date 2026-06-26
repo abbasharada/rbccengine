@@ -7,14 +7,14 @@ const preview = [
     title: 'Multi-Storey Residential Complex',
     category: 'Construction',
     location: 'Abuja, FCT',
-    img: '/images/IMG-20260530-WA0037.jpg',
+    img: '/images/dilu.jpeg',
     fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     title: 'Structural Foundation Works',
-    category: 'Civil Engineering',
+    category: 'Solar Installation',
     location: 'Kano State',
-    img: '/images/IMG-20260531-WA0130.jpg',
+    img: '/images/solar4.jpg',
     fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
