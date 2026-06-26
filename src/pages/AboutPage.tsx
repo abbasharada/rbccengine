@@ -147,7 +147,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
             <div className="lg:col-span-5 relative group">
               <div className="aspect-[4/5] bg-gray-100 overflow-hidden rounded-lg relative border border-gray-200">
                 <img 
-                  src="/images/C.E.O.jpg" 
+                  src="/images/C.E.O.jpeg" 
                   alt="CEO / Managing Director"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
