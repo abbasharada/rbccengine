@@ -39,24 +39,23 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* Hero Banner */}
+      {/* Hero Banner - Clear Presentation without Gradients */}
       <section className="relative pt-28 pb-16 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/IMG-20260530-WA0015.jpg" alt="RBCC Engineering"
             className="w-full h-full object-cover object-center"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920'; }} />
-          <div className="absolute inset-0 bg-navy-950/70" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-[2px] bg-amber-500" />
-            <span className="text-amber-400 font-heading font-bold text-[11px] uppercase tracking-[0.2em]">Who We Are</span>
+            <span className="text-amber-400 font-heading font-bold text-[11px] uppercase tracking-[0.2em] drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">Who We Are</span>
           </div>
-          <h1 className="font-heading font-black text-white text-3xl md:text-4xl lg:text-5xl uppercase tracking-wide">
+          <h1 className="font-heading font-black text-white text-3xl md:text-4xl lg:text-5xl uppercase tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             About<br />
             <span className="text-amber-400">RBCC Engineering</span>
           </h1>
-          <p className="text-white/85 text-sm mt-3 max-w-xl font-medium leading-relaxed">
+          <p className="text-white text-sm mt-3 max-w-xl font-semibold leading-relaxed drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.9)]">
             A multidisciplinary engineering and construction firm delivering excellence across Nigeria since 2011.
           </p>
         </div>

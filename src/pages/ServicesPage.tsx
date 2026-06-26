@@ -78,25 +78,23 @@ export default function ServicesPage() {
 
   return (
     <>
-      {/* Hero Banner */}
+      {/* Hero Banner - Clear Presentation without Gradients */}
       <section ref={heroRef as React.RefObject<HTMLElement>} className="relative pt-24 pb-14 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/IMG-20260530-WA0015.jpg" alt="RBCC Engineering services"
             className="w-full h-full object-cover object-center"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920'; }} />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/50 to-navy-950/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/70 to-transparent" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-px bg-gold-500" />
             <span className="text-gold-400 font-heading font-semibold text-[10px] uppercase tracking-[0.2em]">What We Offer</span>
           </div>
-          <h1 className="font-heading font-black text-white text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="font-heading font-black text-white text-3xl md:text-4xl lg:text-5xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             Our<br />
             <span className="text-gold-400">Services</span>
           </h1>
-          <p className="text-white/65 text-sm mt-3 max-w-xl leading-relaxed">
+          <p className="text-white text-sm mt-3 max-w-xl leading-relaxed font-semibold drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.9)]">
             Comprehensive engineering and construction services delivered with precision, quality, and professionalism.
           </p>
         </div>
