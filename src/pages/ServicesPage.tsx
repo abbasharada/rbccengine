@@ -5,75 +5,63 @@ import { Building2, Wrench, Zap, Sun, Droplets, PaintBucket, Users, Home, Shield
 const services = [
   {
     icon: Building2,
-    title: 'Building Construction',
-    desc: 'Complete building construction services including residential, commercial, and industrial developments. From foundation to finishing, we deliver structures built to last.',
-    benefits: ['Residential complexes', 'Commercial buildings', 'Industrial facilities', 'Structural engineering'],
-    img: '/images/IMG-20260530-WA0037.jpg',
-    fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Engineering Design & Consultancy',
+    desc: 'We provide innovative, cost-effective, and standards-compliant engineering design and consultancy services, delivering safe, functional, and sustainable solutions tailored to residential, commercial, and industrial projects.',
+    benefits: ['Architectural Design','Structural Design','Electrical Design','AutoCAD Drafting','BIM Modeling (Revit)','Lighting Design (DIALux)'],
+    img1: '/images/dilux.jpeg', // Main building structure with scaffolding
+    img2: '/images/dilux1.jpeg', // Workers on foundation reinforcement slab
+    fallback1: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
+    fallback2: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Wrench,
-    title: 'Renovation',
-    desc: 'Complete building renovation and structural upgrades. Modernization, retrofitting, and transformation of existing structures to meet contemporary standards.',
-    benefits: ['Structural upgrades', 'Building modernization', 'Facade renovation', 'Interior remodelling'],
-    img: '/images/IMG-20260531-WA0130.jpg',
-    fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Electrical Engineering Services',
+    desc: 'We deliver reliable electrical engineering solutions, from design and installation to testing, commissioning, maintenance, and troubleshooting, ensuring safety, efficiency, and compliance with industry standards.',
+    benefits: ['Electrical Installations', 'Power Distribution Systems','Testing & Commissioning','Maintenance & Troubleshooting'],
+    img1: '/images/IMG-20260531-WA0130.jpg',
+    img2: '/images/IMG-20260530-WA0037.jpg',
+    fallback1: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
+    fallback2: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Zap,
-    title: 'Electrical Engineering',
-    desc: 'Comprehensive electrical engineering services covering power distribution, industrial wiring, lighting systems, and electrical installations.',
-    benefits: ['Power distribution', 'Industrial wiring', 'Panel installation', 'Lighting design'],
-    img: '/images/IMG-20260602-WA0007.jpg',
-    fallback: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Solar Energy Solutions',
+    desc: 'We provide high-quality solar energy solutions that deliver clean, reliable, and cost-effective power through professional design, installation, and maintenance of solar photovoltaic and energy storage systems.',
+    benefits: ['Solar PV System Design','Solar Installation', 'Solar Inverter Systems', 'Battery Storage Systems','Hybrid Power Systems', 'Operation & Maintenance'],
+    img1: '/images/solar.jpg',
+    img2: '/images/solar1.jpeg',
+    fallback1: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=800',
+    fallback2: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Sun,
-    title: 'Solar Energy Solutions',
-    desc: 'Clean, renewable energy solutions including solar PV installation, hybrid systems, off-grid solutions, and commercial solar infrastructure.',
-    benefits: ['Solar PV systems', 'Hybrid installations', 'Off-grid solutions', 'Commercial solar'],
-    img: '/images/IMG-20260530-WA0015.jpg',
-    fallback: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Building Construction',
+    desc: 'We provide comprehensive building construction services, delivering high-quality residential, commercial, and renovation projects with a strong commitment to safety, quality, timely completion, and client satisfaction.',
+    benefits: ['Residential Construction', 'Commercial Construction', 'Renovation Works', 'Site Supervision'],
+    img1: '/images/build.jpeg',
+    img2: '/images/build1.jpeg',
+    fallback1: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
+    fallback2: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Droplets,
-    title: 'Plumbing Services',
-    desc: 'Professional plumbing installation and services including water supply systems, drainage networks, water treatment, and sanitary systems.',
-    benefits: ['Water supply systems', 'Drainage networks', 'Water treatment', 'Sanitary installations'],
-    img: '/images/IMG-20260530-WA0037.jpg',
-    fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    icon: PaintBucket,
     title: 'Finishing Works',
-    desc: 'Premium interior and exterior finishing work including tiling, plastering, painting, ceiling works, and decorative finishes.',
-    benefits: ['Tiling & flooring', 'Plastering', 'Painting finishes', 'Ceiling systems'],
-    img: '/images/IMG-20260531-WA0130.jpg',
-    fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    icon: Users,
-    title: 'Infrastructure Development',
-    desc: 'Large-scale infrastructure development including roads, drainage systems, site development, and civil engineering works.',
-    benefits: ['Road construction', 'Drainage systems', 'Site development', 'Civil structures'],
-    img: '/images/IMG-20260602-WA0007.jpg',
-    fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    icon: Home,
-    title: 'Mechanical & Electrical (M&E)',
-    desc: 'Integrated M&E services combining HVAC systems, fire protection, mechanical ventilation, and comprehensive building services engineering.',
-    benefits: ['HVAC systems', 'Fire protection', 'Mechanical ventilation', 'Building services'],
-    img: '/images/IMG-20260530-WA0015.jpg',
-    fallback: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=800',
+    desc: 'We deliver premium finishing services that enhance the functionality, durability, and aesthetics of every project through skilled craftsmanship, quality materials, and attention to detail.',
+    benefits: ['POP & Ceiling', 'Painting', 'Tiling', 'Interlocking', 'Screeding', 'Interior Finishing',],
+    img1: '/images/finish.jpeg',
+    img2: '/images/finish1.jpeg',
+    fallback1: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
+    fallback2: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: ShieldCheck,
-    title: 'Smart Home Automation',
-    desc: 'Modern smart home solutions including home automation, security integration, energy management, and intelligent building control systems.',
+    title: 'Technology Division (Coming Soon)',
+    desc: 'Our Technology Division is coming soon. Stay tuned for innovative solutions and services.',
     benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
-    img: '/images/IMG-20260530-WA0037.jpg',
-    fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img1: '/images/IMG-20260530-WA0037.jpg',
+    img2: '/images/IMG-20260531-WA0130.jpg',
+    fallback1: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
+    fallback2: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
 ];
 
@@ -114,15 +102,26 @@ export default function ServicesPage() {
           <div className="space-y-8">
             {services.map((service, index) => (
               <div key={service.title} className={`reveal grid lg:grid-cols-2 gap-6 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                
+                {/* Side-by-Side Two-Image Grid Layout */}
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <div className="relative overflow-hidden">
-                    <img src={service.img} alt={service.title}
-                      className="w-full h-56 object-cover"
-                      onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/30 to-transparent" />
-                    <div className="absolute top-0 left-0 w-1 h-full bg-gold-500" />
+                  <div className="grid grid-cols-2 gap-3 relative overflow-hidden">
+                    <div className="relative">
+                      <img src={service.img1} alt={`${service.title} perspective view`}
+                        className="w-full h-56 object-cover"
+                        onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback1; }} />
+                      <div className="absolute top-0 left-0 w-1 h-full bg-gold-500" />
+                    </div>
+                    <div>
+                      <img src={service.img2} alt={`${service.title} alternate view`}
+                        className="w-full h-56 object-cover"
+                        onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback2; }} />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/30 to-transparent pointer-events-none" />
                   </div>
                 </div>
+
+                {/* Text Content Block */}
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 bg-navy-900 flex items-center justify-center">
@@ -143,6 +142,7 @@ export default function ServicesPage() {
                     Request Quote <ArrowRight size={12} />
                   </Link>
                 </div>
+
               </div>
             ))}
           </div>

@@ -52,9 +52,12 @@ export default function Footer() {
                   <p className="mt-0.5">518 Sharada G/garu, Kano</p>
                 </div>
               </li>
-              <li className="flex items-center gap-2.5">
-                <Phone size={13} className="text-gold-400 flex-shrink-0" />
-                <a href="tel:+2348032570597" className="text-white/55 text-sm hover:text-white transition-colors">0803 257 0597</a>
+              <li className="flex items-start gap-2.5">
+                <Phone size={13} className="text-gold-400 mt-1 flex-shrink-0" />
+                <div className="flex flex-col gap-1 text-white/55 text-sm">
+                  <a href="tel:+2348032570597" className="hover:text-white transition-colors">0803 257 0597</a>
+                  <a href="tel:+2349035737455" className="hover:text-white transition-colors">0903 573 7455</a>
+                </div>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={13} className="text-gold-400 flex-shrink-0" />

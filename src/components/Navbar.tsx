@@ -34,7 +34,7 @@ export default function Navbar() {
           {/* Logo & Corporate Branding */}
           <Link to="/" className="flex items-center gap-3 flex-shrink-0">
             <img
-              src="/images/IMG-20260529-WA0453.jpg"
+              src="/images/logo.jpeg"
               alt="RBCC Engineering"
               className="h-14 w-14 rounded-full object-cover border-2 border-amber-500 shadow-md"
               onError={(e) => {
