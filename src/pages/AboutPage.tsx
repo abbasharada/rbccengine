@@ -137,60 +137,75 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
             </h2>
           </div>
 
-          {/* CEO & Managing Director Feature Row */}
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16 bg-white border border-gray-200/60 p-6 md:p-10 rounded-xl shadow-sm reveal">
-            <div className="lg:col-span-5 relative group">
-              <div className="aspect-[4/5] bg-gray-100 overflow-hidden rounded-lg relative border border-gray-200">
-                <img 
-                  src="/images/C.E.O.jpeg" 
-                  alt="CEO / Managing Director"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
-                />
+          {/* CEO / MD Feature Row split cleanly into distinct content segments */}
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-16 bg-white border border-gray-200/60 p-6 md:p-10 rounded-xl shadow-sm reveal">
+            
+            {/* Left Column: Image and Welcome Address */}
+            <div className="lg:col-span-5 space-y-6">
+              <div className="relative group">
+                <div className="aspect-[4/5] bg-gray-100 overflow-hidden rounded-lg relative border border-gray-200">
+                  <img 
+                    src="/images/C.E.O.jpeg" 
+                    alt="Engr. Rabiu Lawan Muhammad"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
+                  />
+                </div>
+                <div className="absolute -bottom-3 -right-3 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-navy-950 shadow-md">
+                  <User size={20} />
+                </div>
               </div>
-              <div className="absolute -bottom-3 -right-3 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-navy-950 shadow-md">
-                <User size={20} />
+
+              {/* Separated Section Category: Welcome Message */}
+              <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
+                <h4 className="font-heading font-bold text-navy-900 text-xs uppercase tracking-wider text-amber-600">
+                  Welcome Message
+                </h4>
+                <p className="font-semibold text-navy-900 text-sm">Welcome to RBCC Engineering and Global Services Ltd.</p>
+                <p className="text-gray-600 text-xs leading-relaxed">
+                  Thank you for visiting our website. We are committed to delivering professional engineering, construction, and technical services with excellence, integrity, and dedication. Our goal is to provide innovative and dependable solutions that exceed expectations while maintaining the highest standards of quality, safety, and professionalism.
+                </p>
+                <p className="text-gray-600 text-xs leading-relaxed">
+                  We value the trust our clients place in us and look forward to building lasting relationships through exceptional service and successful project delivery.
+                </p>
+                <div className="pt-2 border-t border-gray-200">
+                  <p className="text-[10px] font-bold text-navy-950 uppercase tracking-wide">
+                    Thank you for choosing RBCC Engineering Ltd.<br />
+                    <span className="text-amber-600 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
+                    <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder & Managing Director</span>
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="lg:col-span-7">
-              <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-2.5 py-1 rounded inline-block mb-3">
-                Managing Director / CEO Message
-              </span>
-              <h3 className="font-heading font-black text-navy-900 text-xl md:text-2xl uppercase tracking-wide">
-                Engr. Rabiu Lawan Muhammad
-              </h3>
-              <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5 mb-5">
-                Managing Director & CEO, RBCC Engineering
-              </p>
+            {/* Right Column: Executive Profile Biography */}
+            <div className="lg:col-span-7 space-y-5">
+              <div>
+                <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-2.5 py-1 rounded inline-block mb-3">
+                  Managing Director / CEO Profile
+                </span>
+                <h3 className="font-heading font-black text-navy-900 text-xl md:text-2xl uppercase tracking-wide">
+                  Engr. Rabiu Lawan Muhammad
+                </h3>
+                <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5">
+                  Managing Director & CEO, RBCC Engineering
+                </p>
+              </div>
 
               <div className="space-y-4 text-gray-700 text-sm leading-relaxed border-l-2 border-amber-500 pl-5 italic font-medium">
                 <p>
                   "Founder and Managing Director of RBCC Engineering and Global Services Ltd. He holds a Bachelor's Degree in Electrical and Electronics Engineering and has practical experience in engineering, construction, project management, technical design, and business development.
-He has earned various professional certifications and completed specialized training in engineering, construction, and technical disciplines. He is proficient in industry-standard software used for engineering design, lighting design, drafting, project planning, analysis, and documentation.
-Driven by excellence, integrity, and professionalism, he founded RBCC Engineering with a vision to provide reliable engineering and construction solutions that create lasting value for clients, communities, and stakeholders."
+                  He has earned various professional certifications and completed specialized training in engineering, construction, and technical disciplines. He is proficient in industry-standard software used for engineering design, lighting design, drafting, project planning, analysis, and documentation.
+                  Driven by excellence, integrity, and professionalism, he founded RBCC Engineering with a vision to provide reliable engineering and construction solutions that create lasting value for clients, communities, and stakeholders."
                 </p>
                 <p>
                   "We remain dedicated to raising industry standards through innovation, integrity, and an unwavering
                   focus on engineering excellence. When you partner with RBCC, you're choosing a team that treats every
                   project as our own."
                 </p>
-                <div className="pt-2 mt-2 border-t border-gray-100 not-italic font-normal text-gray-600 space-y-3">
-                  <p className="font-semibold text-navy-900">Welcome to RBCC Engineering and Global Services Ltd.</p>
-                  <p>
-                    Thank you for visiting our website. We are committed to delivering professional engineering, construction, and technical services with excellence, integrity, and dedication. Our goal is to provide innovative and dependable solutions that exceed expectations while maintaining the highest standards of quality, safety, and professionalism.
-                  </p>
-                  <p>
-                    We value the trust our clients place in us and look forward to building lasting relationships through exceptional service and successful project delivery.
-                  </p>
-                  <p className="text-xs font-bold text-navy-950 uppercase tracking-wide pt-1">
-                    Thank you for choosing RBCC Engineering and Global Services Ltd.<br />
-                    <span className="text-amber-600 font-heading">Engr. Rabiu Lawan Muhammad</span><br />
-                    <span className="text-gray-400 font-sans text-[10px] block">Founder & Managing Director</span>
-                  </p>
-                </div>
               </div>
             </div>
+
           </div>
 
           {/* Board Members Layout Grid */}

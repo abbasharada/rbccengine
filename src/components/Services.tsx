@@ -3,10 +3,10 @@ import { Building2, Wrench, Zap, Sun, Droplets, PaintBucket, ArrowRight } from '
 import { useNavigate } from 'react-router-dom';
 
 const services = [
-  { icon: Building2, title: 'Engineering Design', desc: 'Residential, commercial & industrial building works' },
+  { icon: Building2, title: 'Engineering Design', desc: 'We provide innovative, cost-effective, and standards-compliant engineering designWe deliver reliable electrical engineering solutions, from design and installation to testing' },
   { icon: Wrench, title: 'Electrical Engineering', desc: 'Structural upgrades and complete remodelling' },
   { icon: Zap, title: 'Solar Energy Solution', desc: 'Power distribution and industrial wiring' },
-  { icon: Sun, title: 'Building Construction', desc: 'On-grid, off-grid and hybrid solar systems' },
+  { icon: Sun, title: 'Building Construction', desc: 'renovation projects with a strong commitment to safety, quality, timely completion' },
   { icon: Droplets, title: 'Technology', desc: 'Water supply, drainage and sanitation' },
   { icon: PaintBucket, title: 'Finishing Works', desc: 'Tiling, plastering, painting and interiors' },
 ];
