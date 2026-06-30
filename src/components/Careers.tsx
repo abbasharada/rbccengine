@@ -51,12 +51,12 @@ export default function Careers() {
   return (
     <>
       {/* Page Banner */}
-      <section className="relative bg-navy-950 pt-28 pb-14 overflow-hidden">
+      <section className="relative bg-blue-950 pt-28 pb-14 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img src="/images/IMG-20260602-WA0007.jpg" alt="" className="w-full h-full object-cover"
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
         </div>
-        <div className="absolute inset-0 bg-navy-950/80" />
+        <div className="absolute inset-0 bg-blue-950/80" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-px bg-gold-500" />
@@ -83,10 +83,10 @@ export default function Careers() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {values.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="reveal p-5 border border-gray-100 bg-gray-50 hover:border-gold-500/40 hover:bg-white transition-all">
-                <div className="w-10 h-10 bg-navy-900 flex items-center justify-center mb-3">
+                <div className="w-10 h-10 bg-blue-600 flex items-center justify-center mb-3">
                   <Icon size={17} className="text-gold-400" />
                 </div>
-                <h3 className="font-heading font-bold text-navy-900 text-sm mb-1.5">{title}</h3>
+                <h3 className="font-heading font-bold text-blue-900 text-sm mb-1.5">{title}</h3>
                 <p className="text-gray-600 text-sm leading-snug">{desc}</p>
               </div>
             ))}
@@ -103,7 +103,7 @@ export default function Careers() {
                   'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200';
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-950/70 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-950/70 to-transparent" />
             <div className="absolute inset-0 flex items-center">
               <div className="px-8 max-w-md">
                 <p className="font-heading font-bold text-white text-lg md:text-xl leading-tight">
@@ -128,10 +128,10 @@ export default function Careers() {
             {positions.map(({ title, dept, location, type }) => (
               <div key={title} className="bg-white border border-gray-100 p-5 hover:border-gold-500/50 hover:shadow-md transition-all group">
                 <div className="flex items-start justify-between gap-2 mb-3">
-                  <span className="bg-navy-900 text-gold-400 font-heading font-bold text-[9px] uppercase tracking-widest px-2.5 py-1">{dept}</span>
+                  <span className="bg-blue-600 text-gold-400 font-heading font-bold text-[9px] uppercase tracking-widest px-2.5 py-1">{dept}</span>
                   <span className="text-gray-400 text-[10px] border border-gray-200 px-2 py-0.5">{type}</span>
                 </div>
-                <h3 className="font-heading font-bold text-navy-900 text-sm mb-2 group-hover:text-gold-600 transition-colors">{title}</h3>
+                <h3 className="font-heading font-bold text-blue-900 text-sm mb-2 group-hover:text-gold-600 transition-colors">{title}</h3>
                 <div className="flex items-center gap-1.5 text-gray-500">
                   <MapPin size={11} />
                   <span className="text-xs">{location}</span>
@@ -147,7 +147,7 @@ export default function Careers() {
 
           {/* Application Form */}
           <div id="apply-form" className="bg-white border border-gray-100 p-6 md:p-8 max-w-2xl">
-            <h3 className="font-heading font-bold text-navy-900 text-lg mb-1">Submit Your Application</h3>
+            <h3 className="font-heading font-bold text-blue-900 text-lg mb-1">Submit Your Application</h3>
             <p className="text-gray-500 text-sm mb-6">Not seeing the right role? Send us your CV over WhatsApp — we are always looking for talent.</p>
 
             {applied ? (
@@ -155,7 +155,7 @@ export default function Careers() {
                 <div className="w-12 h-12 bg-green-50 border border-green-100 flex items-center justify-center mx-auto mb-4">
                   <MessageCircle size={20} className="text-green-600" />
                 </div>
-                <h4 className="font-heading font-bold text-navy-900 text-base mb-1">WhatsApp Launched!</h4>
+                <h4 className="font-heading font-bold text-blue-900 text-base mb-1">WhatsApp Launched!</h4>
                 <p className="text-gray-500 text-sm">Your application text bundle was created. Please pass it over the chat window to finalize review.</p>
               </div>
             ) : (
@@ -165,13 +165,13 @@ export default function Careers() {
                     <label className="block text-[9px] font-heading font-bold text-gray-600 uppercase tracking-widest mb-1.5">Full Name *</label>
                     <input type="text" name="name" value={form.name} onChange={handleChange} required
                       placeholder="Your full name"
-                      className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-navy-900 transition-colors" />
+                      className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-blue-950 transition-colors" />
                   </div>
                   <div>
                     <label className="block text-[9px] font-heading font-bold text-gray-600 uppercase tracking-widest mb-1.5">Email Address *</label>
                     <input type="email" name="email" value={form.email} onChange={handleChange} required
                       placeholder="your@email.com"
-                      className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-navy-900 transition-colors" />
+                      className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-blue-950 transition-colors" />
                   </div>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -179,12 +179,12 @@ export default function Careers() {
                     <label className="block text-[9px] font-heading font-bold text-gray-600 uppercase tracking-widest mb-1.5">Phone Number *</label>
                     <input type="tel" name="phone" value={form.phone} onChange={handleChange} required
                       placeholder="+234 000 000 0000"
-                      className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-navy-900 transition-colors" />
+                      className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-blue-950 transition-colors" />
                   </div>
                   <div>
                     <label className="block text-[9px] font-heading font-bold text-gray-600 uppercase tracking-widest mb-1.5">Position of Interest</label>
                     <select name="position" value={form.position} onChange={handleChange}
-                      className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-navy-900 transition-colors">
+                      className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-blue-950 transition-colors">
                       <option value="">Select position</option>
                       {positions.map(p => <option key={p.title} value={p.title}>{p.title}</option>)}
                       <option value="Other">Other / General Application</option>
@@ -195,7 +195,7 @@ export default function Careers() {
                   <label className="block text-[9px] font-heading font-bold text-gray-600 uppercase tracking-widest mb-1.5">Cover Note</label>
                   <textarea name="message" value={form.message} onChange={handleChange} rows={3}
                     placeholder="Tell us about yourself and your experience..."
-                    className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-navy-900 transition-colors resize-none" />
+                    className="w-full border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm focus:outline-none focus:border-blue-950 transition-colors resize-none" />
                 </div>
                 <button type="submit" className="btn-primary">
                   <Send size={13} /> Submit via WhatsApp

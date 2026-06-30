@@ -4,7 +4,6 @@ import { getAllNoticesSorted, formatNoticeDate, categoryColors, type Notice, typ
 
 const categories: NoticeCategory[] = ['Tender', 'Procurement', 'Announcement', 'Construction Update', 'Official Communication'];
 
-// Include 'All' option
 type FilterCategory = NoticeCategory | 'All';
 const allFilterCategories: FilterCategory[] = ['All', ...categories];
 
@@ -25,7 +24,7 @@ export default function Notifications() {
   return (
     <>
       {/* Page Banner */}
-      <section className="bg-navy-950 pt-28 pb-12">
+      <section className="bg-blue-950 pt-28 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-px bg-gold-500" />
@@ -52,7 +51,7 @@ export default function Notifications() {
                 placeholder="Search notices..."
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                className="w-full pl-9 pr-4 py-2 border border-gray-200 text-sm focus:outline-none focus:border-navy-900 transition-colors"
+                className="w-full pl-9 pr-4 py-2 border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors"
               />
             </div>
             {/* Category Tabs */}
@@ -63,8 +62,8 @@ export default function Notifications() {
                   onClick={() => setActiveCategory(cat)}
                   className={`flex-shrink-0 px-3 py-1.5 font-heading font-bold text-[10px] uppercase tracking-widest transition-colors border ${
                     activeCategory === cat
-                      ? 'bg-navy-900 text-gold-400 border-navy-900'
-                      : 'bg-white text-gray-500 border-gray-200 hover:border-navy-900 hover:text-navy-900'
+                      ? 'bg-blue-600 text-gold-400 border-blue-600'
+                      : 'bg-white text-gray-500 border-gray-200 hover:border-blue-900 hover:text-blue-900'
                   }`}
                 >
                   {cat}
@@ -86,7 +85,7 @@ export default function Notifications() {
             </div>
           ) : (
             <div className="space-y-3">
-              {(activeCategory === 'All' ? filtered : filtered.filter(n => n.category === activeCategory || activeCategory === 'All')).map((notice: Notice) => (
+              {filtered.map((notice: Notice) => (
                 <div key={notice.id} className={`bg-white border ${notice.urgent ? 'border-amber-300' : 'border-gray-100'} p-5 hover:shadow-md transition-shadow`}>
                   <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                     <div className="flex-1 min-w-0">
@@ -101,7 +100,7 @@ export default function Notifications() {
                         )}
                         <span className="text-gray-400 text-[10px]">Ref: {notice.ref}</span>
                       </div>
-                      <h3 className="font-heading font-bold text-navy-900 text-sm md:text-base mb-1.5 leading-snug">{notice.title}</h3>
+                      <h3 className="font-heading font-bold text-blue-900 text-sm md:text-base mb-1.5 leading-snug">{notice.title}</h3>
                       <p className="text-gray-600 text-sm leading-relaxed">{notice.summary}</p>
                     </div>
                     <div className="flex sm:flex-col items-center sm:items-end gap-3 sm:gap-2 flex-shrink-0">
@@ -111,7 +110,7 @@ export default function Notifications() {
                       </div>
                       <div className="flex gap-2">
                         {notice.hasDoc && (
-                          <button className="flex items-center gap-1.5 text-navy-900 border border-navy-900/20 hover:bg-navy-900 hover:text-white px-3 py-1.5 text-[10px] font-heading font-bold uppercase tracking-wide transition-colors">
+                          <button className="flex items-center gap-1.5 text-blue-900 border border-blue-900/20 hover:bg-blue-600 hover:text-white px-3 py-1.5 text-[10px] font-heading font-bold uppercase tracking-wide transition-colors">
                             <Download size={11} /> PDF
                           </button>
                         )}
@@ -127,13 +126,13 @@ export default function Notifications() {
           )}
 
           {/* Footer note */}
-          <div className="mt-8 p-4 bg-navy-900/5 border border-navy-900/10 text-center">
+          <div className="mt-8 p-4 bg-blue-600/5 border border-blue-600/10 text-center">
             <p className="text-gray-500 text-xs">
               For official correspondence regarding any notice, contact{' '}
-              <a href="mailto:Rbccengineering@gmail.com" className="text-navy-900 font-semibold hover:text-gold-600 transition-colors">
+              <a href="mailto:Rbccengineering@gmail.com" className="text-blue-900 font-semibold hover:text-gold-600 transition-colors">
                 Rbccengineering@gmail.com
               </a>{' '}
-              or call <a href="tel:+2348032570597" className="text-navy-900 font-semibold hover:text-gold-600 transition-colors">0803 257 0597</a>
+              or call <a href="tel:+2348032570597" className="text-blue-900 font-semibold hover:text-gold-600 transition-colors">0803 257 0597</a>
             </p>
           </div>
         </div>

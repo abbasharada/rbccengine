@@ -25,10 +25,23 @@ const milestones = [
   { year: '2026', event: '200+ projects milestone achieved' },
 ];
 
+// Updated board members configuration matching images verbatim
 const boardMembers = [
-  { name: 'Engr. Abdullahi Kabir', title: 'Executive Director, Technical Services' },
-  { name: 'Arc. Naimah Ahmad', title: 'Head of Architecture & Design' },
-  { name: 'Musa Musa Kabir', title: 'Director of Global Projects & Strategy' },
+  { 
+    name: 'Engr. Noar Toyin ajekiigbe', 
+    title: 'Structural Engineer, COREN | Head of Civil Engineering Department',
+    img: '/images/solar6.jpg'
+  },
+  { 
+    name: 'Ismail Sadiq', 
+    title: 'Head of Architectural Department',
+    img: '/images/arch.jpg'
+  },
+  { 
+    name: 'Musa Musa Kabir', 
+    title: 'Director of Global Projects & Strategy',
+    img: '/images/solar1.jpg'
+  },
 ];
 
 export default function AboutPage() {
@@ -69,7 +82,7 @@ export default function AboutPage() {
               <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-5">Company Overview</span>
               <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
-                  <strong className="text-navy-900 font-bold">RBCC Engineering and Global Services Ltd</strong> is a Nigerian engineering and construction company committed to delivering high-quality, reliable, and innovative solutions across various sectors of the construction and engineering industry.
+                  <strong className="text-blue-900 font-bold">RBCC Engineering and Global Services Ltd</strong> is a Nigerian engineering and construction company committed to delivering high-quality, reliable, and innovative solutions across various sectors of the construction and engineering industry.
 The company provides a wide range of services, including building construction, electrical engineering services, plumbing, painting, POP installation, plastering, screeding, block work, tiling, interlocking, carpentry, project supervision, and general construction works.
 At RBCC Engineering, we are dedicated to excellence, professionalism, safety, integrity, and customer satisfaction. Our goal is to deliver projects that meet the highest standards of quality while creating lasting value for our clients and communities.
 Through skilled workmanship, technical expertise, and a commitment to continuous improvement, RBCC Engineering strives to be a trusted partner in engineering and construction, contributing to sustainable development and infrastructure growth across Nigeria.
@@ -90,7 +103,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                 className="w-full h-80 object-cover rounded shadow-lg"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800'; }} />
               <div className="absolute top-0 left-0 w-1.5 h-full bg-amber-500" />
-              <div className="absolute -bottom-4 -right-4 bg-navy-900 border border-white/10 p-4 hidden md:block rounded shadow-xl">
+              <div className="absolute -bottom-4 -right-4 bg-blue-900 border border-white/10 p-4 hidden md:block rounded shadow-xl">
                 <Award className="text-amber-400 mb-1" size={24} />
                 <p className="font-heading font-bold text-white text-[10px] uppercase tracking-wide">ISO Certified</p>
                 <p className="text-white/60 text-[9px] mt-0.5 font-medium">Quality Management</p>
@@ -105,19 +118,19 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 border border-gray-100 p-6 md:p-8 rounded reveal">
-              <div className="w-10 h-10 bg-navy-900 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 bg-blue-900 flex items-center justify-center mb-4">
                 <Target size={18} className="text-amber-400" />
               </div>
-              <h3 className="font-heading font-bold text-navy-900 text-base uppercase tracking-wide mb-3">Our Vision</h3>
+              <h3 className="font-heading font-bold text-blue-900 text-base uppercase tracking-wide mb-3">Our Vision</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 To become a leading engineering and construction company recognized for excellence, innovation, quality, and integrity in Nigeria and beyond.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-100 p-6 md:p-8 rounded reveal">
-              <div className="w-10 h-10 bg-navy-900 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 bg-blue-900 flex items-center justify-center mb-4">
                 <TrendingUp size={18} className="text-amber-400" />
               </div>
-              <h3 className="font-heading font-bold text-navy-900 text-base uppercase tracking-wide mb-3">Our Mission</h3>
+              <h3 className="font-heading font-bold text-blue-900 text-base uppercase tracking-wide mb-3">Our Mission</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 To provide professional engineering and construction services that deliver value, exceed client expectations, and contribute to sustainable development through quality workmanship, technical expertise, and exceptional service.
               </p>
@@ -132,14 +145,14 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
 
           <div className="max-w-xl mb-10 reveal">
             <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">Executive Leadership</span>
-            <h2 className="font-heading font-black text-navy-900 text-2xl md:text-3xl uppercase tracking-tight">
+            <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">
               Board of Directors
             </h2>
           </div>
 
-          {/* CEO / MD Feature Row split cleanly into distinct content segments */}
+          {/* CEO / MD Feature Row */}
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-16 bg-white border border-gray-200/60 p-6 md:p-10 rounded-xl shadow-sm reveal">
-            
+
             {/* Left Column: Image and Welcome Address */}
             <div className="lg:col-span-5 space-y-6">
               <div className="relative group">
@@ -151,17 +164,17 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                     onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
                   />
                 </div>
-                <div className="absolute -bottom-3 -right-3 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-navy-950 shadow-md">
+                <div className="absolute -bottom-3 -right-3 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-blue-950 shadow-md">
                   <User size={20} />
                 </div>
               </div>
 
-              {/* Separated Section Category: Welcome Message */}
+              {/* Welcome Message */}
               <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
-                <h4 className="font-heading font-bold text-navy-900 text-xs uppercase tracking-wider text-amber-600">
+                <h4 className="font-heading font-bold text-blue-900 text-xs uppercase tracking-wider text-amber-600">
                   Welcome Message
                 </h4>
-                <p className="font-semibold text-navy-900 text-sm">Welcome to RBCC Engineering and Global Services Ltd.</p>
+                <p className="font-semibold text-blue-900 text-sm">Welcome to RBCC Engineering and Global Services Ltd.</p>
                 <p className="text-gray-600 text-xs leading-relaxed">
                   Thank you for visiting our website. We are committed to delivering professional engineering, construction, and technical services with excellence, integrity, and dedication. Our goal is to provide innovative and dependable solutions that exceed expectations while maintaining the highest standards of quality, safety, and professionalism.
                 </p>
@@ -169,7 +182,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                   We value the trust our clients place in us and look forward to building lasting relationships through exceptional service and successful project delivery.
                 </p>
                 <div className="pt-2 border-t border-gray-200">
-                  <p className="text-[10px] font-bold text-navy-950 uppercase tracking-wide">
+                  <p className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
                     Thank you for choosing RBCC Engineering Ltd.<br />
                     <span className="text-amber-600 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
                     <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder & Managing Director</span>
@@ -184,7 +197,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                 <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-2.5 py-1 rounded inline-block mb-3">
                   Managing Director / CEO Profile
                 </span>
-                <h3 className="font-heading font-black text-navy-900 text-xl md:text-2xl uppercase tracking-wide">
+                <h3 className="font-heading font-black text-blue-900 text-xl md:text-2xl uppercase tracking-wide">
                   Engr. Rabiu Lawan Muhammad
                 </h3>
                 <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5">
@@ -208,20 +221,20 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
 
           </div>
 
-          {/* Board Members Layout Grid */}
+          {/* Board Members Layout Grid utilizing 1000016660.jpg, 1000017393.jpg, and 1000012609.jpg */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {boardMembers.map((member, i) => (
               <div key={i} className="bg-white border border-gray-200/60 p-5 rounded-lg shadow-sm hover:border-amber-500/40 transition-all group reveal">
                 <div className="aspect-[4/4] bg-gray-50 rounded mb-4 overflow-hidden relative border border-gray-100">
-                  <div className="absolute inset-0 bg-navy-950/10 group-hover:bg-transparent transition-colors z-10" />
+                  <div className="absolute inset-0 bg-blue-950/10 group-hover:bg-transparent transition-colors z-10" />
                   <img 
-                    src={`/images/member-${i+1}.jpg`} 
+                    src={member.img} 
                     alt={member.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=400'; }}
                   />
                 </div>
-                <h4 className="font-heading font-bold text-navy-900 text-base group-hover:text-amber-500 transition-colors uppercase tracking-wide">
+                <h4 className="font-heading font-bold text-blue-900 text-base group-hover:text-amber-500 transition-colors uppercase tracking-wide">
                   {member.name}
                 </h4>
                 <p className="text-gray-500 text-[11px] font-semibold uppercase tracking-wider mt-0.5">
@@ -239,15 +252,15 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-xl mx-auto mb-10 reveal">
             <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">What Drives Us</span>
-            <h2 className="font-heading font-black text-navy-900 text-2xl md:text-3xl uppercase tracking-tight">Core Values</h2>
+            <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Core Values</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {values.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="reveal text-center p-6 bg-gray-50 border border-gray-100 hover:border-amber-500/40 transition-all rounded">
-                <div className="w-12 h-12 bg-navy-900 flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-blue-900 flex items-center justify-center mx-auto mb-4">
                   <Icon size={20} className="text-amber-400" />
                 </div>
-                <h3 className="font-heading font-bold text-navy-900 text-sm uppercase tracking-wider mb-2">{title}</h3>
+                <h3 className="font-heading font-bold text-blue-900 text-sm uppercase tracking-wider mb-2">{title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
@@ -256,7 +269,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
       </section>
 
       {/* Stats */}
-      <section className="py-12 bg-navy-900">
+      <section className="py-12 bg-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map(({ v, l }) => (
@@ -274,7 +287,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-xl mx-auto mb-10 reveal">
             <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">Our Journey</span>
-            <h2 className="font-heading font-black text-navy-900 text-2xl md:text-3xl uppercase tracking-tight">Milestones</h2>
+            <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Milestones</h2>
           </div>
           <div className="relative reveal">
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gray-200 md:-translate-x-px" />
@@ -284,11 +297,11 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                   <div className={`flex-1 ${i % 2 === 0 ? 'md:text-right' : 'md:text-left'} hidden md:block`}>
                     <p className="text-gray-600 text-sm font-medium">{event}</p>
                   </div>
-                  <div className="relative z-10 w-8 h-8 bg-navy-900 border-4 border-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="relative z-10 w-8 h-8 bg-blue-900 border-4 border-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <Star size={12} className="text-amber-400" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-heading font-bold text-navy-900 text-sm tracking-wide">{year}</p>
+                    <p className="font-heading font-bold text-blue-900 text-sm tracking-wide">{year}</p>
                     <p className="text-gray-600 text-sm mt-0.5 md:hidden font-medium">{event}</p>
                   </div>
                 </div>
@@ -299,7 +312,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
       </section>
 
       {/* Why Choose RBCC */}
-      <section ref={whyRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-navy-900">
+      <section ref={whyRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
@@ -320,7 +333,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                   </li>
                 ))}
               </ul>
-              <Link to="/contact" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-navy-950 px-6 py-3 rounded font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 mt-7 transition-colors shadow-lg">
+              <Link to="/contact" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-blue-950 px-6 py-3 rounded font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 mt-7 transition-colors shadow-lg">
                 Start Your Project <ArrowRight size={14} />
               </Link>
             </div>
@@ -336,13 +349,13 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
       {/* CTA */}
       <section className="py-14 bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="font-heading font-black text-navy-900 text-xl uppercase tracking-wide mb-3">Ready to Build Your Next Project?</h3>
+          <h3 className="font-heading font-black text-blue-900 text-xl uppercase tracking-wide mb-3">Ready to Build Your Next Project?</h3>
           <p className="text-gray-600 text-sm mb-6 font-medium">Contact us today to discuss your engineering and construction needs.</p>
           <div className="flex justify-center gap-3">
-            <Link to="/contact" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-navy-950 px-5 py-2.5 rounded font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
+            <Link to="/contact" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-blue-950 px-5 py-2.5 rounded font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
               Contact Us <ArrowRight size={14} />
             </Link>
-            <Link to="/projects" className="border-2 border-navy-950 hover:bg-navy-950 hover:text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all">
+            <Link to="/projects" className="border-2 border-blue-950 hover:bg-blue-950 hover:text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all">
               View Projects
             </Link>
           </div>
