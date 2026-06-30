@@ -65,7 +65,7 @@ const services = [
     benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
     img1: '/images/solar6.jpg',
     img2: '/images/solar2.jpg',
-    img3: '/images/solar.jpg',
+    img3: '/images/soon.jpg',
     img4: '/images/solar1.jpeg',
     fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
   },

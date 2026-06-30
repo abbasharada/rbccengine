@@ -28,9 +28,9 @@ const milestones = [
 // Updated board members configuration matching images verbatim
 const boardMembers = [
   { 
-    name: 'Engr. Noar Toyin ajekiigbe', 
+    name: 'Engr. Noah Toyin ajekiigbe', 
     title: 'Structural Engineer, COREN | Head of Civil Engineering Department',
-    img: '/images/solar6.jpg'
+    img: '/images/noah.jpg'
   },
   { 
     name: 'Ismail Sadiq', 
