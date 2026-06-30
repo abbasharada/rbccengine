@@ -58,11 +58,9 @@ export default function Projects() {
       {/* Page Banner */}
       <section className="relative pt-24 pb-14 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/IMG-20260530-WA0037.jpg" alt="RBCC construction project"
+          <img src="/images/solar1.jpeg" alt="RBCC construction project"
             className="w-full h-full object-cover object-center"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = FALLBACK; }} />
-          <div className="absolute inset-0 bg-gradient-to-t from-blue-950/85 via-blue-950/50 to-blue-950/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-950/70 to-transparent" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">

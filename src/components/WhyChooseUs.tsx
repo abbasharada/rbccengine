@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
   const ref = useReveal();
 
   return (
-    <section id="why-us" className="relative py-12 md:py-14 bg-navy-900 overflow-hidden" ref={ref as React.RefObject<HTMLElement>}>
+    <section id="why-us" className="relative py-12 md:py-14 bg-blue-600 overflow-hidden" ref={ref as React.RefObject<HTMLElement>}>
       <div className="absolute inset-0 opacity-[0.025]"
         style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20h20v20H20zM0 0h20v20H0z' fill='%23fff' fill-opacity='0.4'/%3E%3C/svg%3E")` }} />
 
