@@ -79,7 +79,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
-              <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-5">Company Overview</span>
+              <span className="font-heading font-bold text-gold-500 text-[11px] uppercase tracking-widest block mb-5">Company Overview</span>
               <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
                   <strong className="text-blue-900 font-bold">RBCC Engineering and Global Services Ltd</strong> is a Nigerian engineering and construction company committed to delivering high-quality, reliable, and innovative solutions across various sectors of the construction and engineering industry.

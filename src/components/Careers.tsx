@@ -51,12 +51,11 @@ export default function Careers() {
   return (
     <>
       {/* Page Banner */}
-      <section className="relative bg-blue-950 pt-28 pb-14 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative bg-blue-100 pt-28 pb-14 ">
+        <div className="absolute inset-0 opacity-50">
           <img src="/images/IMG-20260602-WA0007.jpg" alt="" className="w-full h-full object-cover"
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
         </div>
-        <div className="absolute inset-0 bg-blue-950/80" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-px bg-gold-500" />

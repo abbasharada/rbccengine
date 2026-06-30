@@ -60,7 +60,7 @@ export default function Company() {
               />
               <div className="absolute top-0 left-0 w-1 h-full bg-gold-500" />
             </div>
-            <div className="bg-navy-900 p-5">
+            <div className="bg-blue-600 p-5">
               <p className="font-heading font-bold text-gold-400 text-[10px] uppercase tracking-widest mb-3">Our Capabilities</p>
               <ul className="space-y-2.5">
                 {highlights.map((item) => (

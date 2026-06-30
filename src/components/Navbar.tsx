@@ -82,7 +82,7 @@ export default function Navbar() {
               </a>
             </div>
             
-            <Link to="/contact" className="hidden sm:inline-flex btn-primary !py-2.5 !px-5 !text-[11px] font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-blue-950 transition-colors rounded">
+            <Link to="/contact" className="hidden sm:inline-flex btn-primary !py-2.5 !px-5 !text-[11px] font-bold uppercase tracking-wider !bg-gold-500 hover:bg-amber-600 text-blue-950 transition-colors rounded">
               Get a Quote
             </Link>
             <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden text-white/80 hover:text-amber-400 p-1.5 transition-colors">
