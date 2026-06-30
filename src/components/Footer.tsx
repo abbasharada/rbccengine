@@ -10,7 +10,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-950">
+    <footer className="bg-blue-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
 
@@ -28,13 +28,13 @@ export default function Footer() {
                 <p className="text-gold-400 text-[10px] tracking-widest uppercase">& Global Services Ltd</p>
               </div>
             </Link>
-            <p className="text-white/50 text-sm leading-relaxed mb-4 max-w-sm">
+            <p className="text-white/70 text-sm leading-relaxed mb-4 max-w-sm">
               Building a Stronger Future Through Engineering. Premium construction solutions across Nigeria.
             </p>
             <div className="flex gap-2">
               {socials.map(({ icon: Icon, href }, i) => (
                 <a key={i} href={href} target="_blank" rel="noopener noreferrer"
-                  className="w-8 h-8 border border-white/20 flex items-center justify-center text-white/50 hover:border-gold-400 hover:text-gold-400 transition-all">
+                  className="w-8 h-8 border border-white/20 flex items-center justify-center text-white/70 hover:border-gold-400 hover:text-gold-400 transition-all">
                   <Icon size={14} />
                 </a>
               ))}
@@ -47,21 +47,21 @@ export default function Footer() {
             <ul className="space-y-3.5">
               <li className="flex items-start gap-2.5">
                 <MapPin size={13} className="text-gold-400 mt-1 flex-shrink-0" />
-                <div className="text-white/55 text-sm">
+                <div className="text-white/80 text-sm">
                   <p>No. 1473 Katampe District, Abuja</p>
                   <p className="mt-0.5">518 Sharada G/garu, Kano</p>
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone size={13} className="text-gold-400 mt-1 flex-shrink-0" />
-                <div className="flex flex-col gap-1 text-white/55 text-sm">
+                <div className="flex flex-col gap-1 text-white/80 text-sm">
                   <a href="tel:+2348032570597" className="hover:text-white transition-colors">0803 257 0597</a>
                   <a href="tel:+2349035737455" className="hover:text-white transition-colors">0903 573 7455</a>
                 </div>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={13} className="text-gold-400 flex-shrink-0" />
-                <a href="mailto:Rbccengineering@gmail.com" className="text-white/55 text-sm hover:text-white transition-colors break-all">Rbccengineering@gmail.com</a>
+                <a href="mailto:Rbccengineering@gmail.com" className="text-white/80 text-sm hover:text-white transition-colors break-all">Rbccengineering@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -71,11 +71,11 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-white/35 text-xs">&copy; {new Date().getFullYear()} RBCC Engineering and Global Services Ltd. All rights reserved.</p>
-          <div className="flex gap-5 text-white/35 text-xs">
-            <Link to="/notifications" className="hover:text-white/60 transition-colors">Public Notices</Link>
-            <Link to="/careers" className="hover:text-white/60 transition-colors">Careers</Link>
-            <Link to="/contact" className="hover:text-white/60 transition-colors">Contact</Link>
+          <p className="text-white/60 text-xs">&copy; {new Date().getFullYear()} RBCC Engineering and Global Services Ltd. All rights reserved.</p>
+          <div className="flex gap-5 text-white/60 text-xs">
+            <Link to="/notifications" className="hover:text-white/90 transition-colors">Public Notices</Link>
+            <Link to="/careers" className="hover:text-white/90 transition-colors">Careers</Link>
+            <Link to="/contact" className="hover:text-white/90 transition-colors">Contact</Link>
           </div>
         </div>
       </div>

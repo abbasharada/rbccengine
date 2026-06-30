@@ -23,18 +23,20 @@ export default function Services() {
             <span className="section-heading">What We Do</span>
             <h2 className="section-title">Core Services</h2>
           </div>
-          <button onClick={() => navigate('/#contact')} className="btn-outline-navy self-start sm:flex-shrink-0 !py-2.5 !px-5 !text-[10px]">
+          {/* Swapped button class to match blue utility config */}
+          <button onClick={() => navigate('/#contact')} className="btn-outline-blue self-start sm:flex-shrink-0 !py-2.5 !px-5 !text-[10px]">
             Request a Quote <ArrowRight size={13} />
           </button>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="reveal group p-5 bg-gray-50 border border-gray-100 hover:bg-navy-900 hover:border-navy-900 transition-all duration-300">
+            /* Updated hover backgrounds and border configurations to blue-950 */
+            <div key={title} className="reveal group p-5 bg-gray-50 border border-gray-100 hover:bg-blue-950 hover:border-blue-950 transition-all duration-300">
               <div className="w-10 h-10 bg-gold-500/10 group-hover:bg-gold-500 flex items-center justify-center mb-3.5 transition-colors">
-                <Icon size={18} className="text-gold-600 group-hover:text-navy-900 transition-colors" />
+                <Icon size={18} className="text-gold-600 group-hover:text-blue-950 transition-colors" />
               </div>
-              <h3 className="font-heading font-bold text-navy-900 group-hover:text-white text-sm mb-1.5 transition-colors">{title}</h3>
+              <h3 className="font-heading font-bold text-blue-950 group-hover:text-white text-sm mb-1.5 transition-colors">{title}</h3>
               <p className="text-gray-600 group-hover:text-white/65 text-sm transition-colors leading-snug">{desc}</p>
             </div>
           ))}

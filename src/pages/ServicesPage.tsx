@@ -117,17 +117,20 @@ export default function ServicesPage() {
                     <img src={service.img2} alt={`${service.title} 2`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
                     <img src={service.img3} alt={`${service.title} 3`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
                     <img src={service.img4} alt={`${service.title} 4`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/20 to-transparent pointer-events-none" />
+                    {/* Changed navy-950 to blue-950 */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-950/20 to-transparent pointer-events-none" />
                   </div>
                 </div>
 
                 {/* Text Content Block */}
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-navy-900 flex items-center justify-center">
+                    {/* Changed bg-navy-900 to bg-blue-600 */}
+                    <div className="w-10 h-10 bg-blue-600 flex items-center justify-center">
                       <service.icon size={18} className="text-gold-400" />
                     </div>
-                    <h3 className="font-heading font-bold text-navy-900 text-lg">{service.title}</h3>
+                    {/* Changed text-navy-900 to text-blue-900 */}
+                    <h3 className="font-heading font-bold text-blue-900 text-lg">{service.title}</h3>
                   </div>
                   <p className="text-gray-600 text-sm leading-relaxed mb-5">{service.desc}</p>
                   <div className="grid grid-cols-2 gap-2 mb-5">
@@ -150,7 +153,8 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section ref={ctaRef as React.RefObject<HTMLElement>} className="py-12 md:py-14 bg-navy-900">
+      {/* Changed bg-navy-900 to bg-blue-600 */}
+      <section ref={ctaRef as React.RefObject<HTMLElement>} className="py-12 md:py-14 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
             <div>
@@ -158,7 +162,7 @@ export default function ServicesPage() {
                 Ready to Start Your<br />
                 <span className="text-gold-400">Project?</span>
               </h3>
-              <p className="text-white/55 text-sm mt-2 max-w-md leading-relaxed">
+              <p className="text-white/80 text-sm mt-2 max-w-md leading-relaxed">
                 Contact us today to discuss your engineering and construction needs. Our team is ready to deliver.
               </p>
             </div>

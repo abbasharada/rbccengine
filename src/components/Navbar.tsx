@@ -27,7 +27,7 @@ export default function Navbar() {
   const isHomePage = location.pathname === '/';
 
   return (
-    <header className={`fixed top-8 left-0 right-0 z-50 transition-all duration-300 ${scrolled || !isHomePage ? 'bg-navy-950 shadow-lg' : 'bg-navy-950/85 backdrop-blur-sm'}`}>
+    <header className={`fixed top-8 left-0 right-0 z-50 transition-all duration-300 ${scrolled || !isHomePage ? 'bg-blue-600 shadow-lg' : 'bg-blue-600/85 backdrop-blur-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
@@ -82,7 +82,7 @@ export default function Navbar() {
               </a>
             </div>
             
-            <Link to="/contact" className="hidden sm:inline-flex btn-primary !py-2.5 !px-5 !text-[11px] font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-navy-950 transition-colors rounded">
+            <Link to="/contact" className="hidden sm:inline-flex btn-primary !py-2.5 !px-5 !text-[11px] font-bold uppercase tracking-wider bg-amber-500 hover:bg-amber-600 text-blue-950 transition-colors rounded">
               Get a Quote
             </Link>
             <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden text-white/80 hover:text-amber-400 p-1.5 transition-colors">
@@ -93,7 +93,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden bg-navy-950 border-t border-white/10 transition-all duration-300 overflow-hidden ${mobileOpen ? 'max-h-[420px]' : 'max-h-0'}`}>
+      <div className={`lg:hidden bg-blue-700 border-t border-white/10 transition-all duration-300 overflow-hidden ${mobileOpen ? 'max-h-[420px]' : 'max-h-0'}`}>
         <div className="px-4 py-3 space-y-0.5">
           {navItems.map((item) => (
             <Link key={item.to} to={item.to} onClick={() => setMobileOpen(false)}

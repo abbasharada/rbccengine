@@ -61,8 +61,8 @@ export default function Projects() {
           <img src="/images/IMG-20260530-WA0037.jpg" alt="RBCC construction project"
             className="w-full h-full object-cover object-center"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = FALLBACK; }} />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/50 to-navy-950/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-blue-950/85 via-blue-950/50 to-blue-950/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-950/70 to-transparent" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
@@ -97,14 +97,14 @@ export default function Projects() {
             </div>
             <div className="grid grid-cols-2 gap-3 reveal">
               {[
-                { v: '200+', l: 'Projects Completed' },
+                { v: '50+', l: 'Projects Completed' },
                 { v: '15+', l: 'Years of Excellence' },
                 { v: '2', l: 'National Offices' },
                 { v: '100%', l: 'Client Commitment' },
               ].map(({ v, l }) => (
-                <div key={l} className="bg-navy-900 p-5 text-center">
+                <div key={l} className="bg-blue-600 p-5 text-center">
                   <p className="font-heading font-black text-gold-400 text-2xl">{v}</p>
-                  <p className="text-white/55 text-[9px] mt-1 uppercase tracking-wide">{l}</p>
+                  <p className="text-white/70 text-[9px] mt-1 uppercase tracking-wide">{l}</p>
                 </div>
               ))}
             </div>
@@ -126,10 +126,10 @@ export default function Projects() {
                   <img src={img} alt={title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => { (e.currentTarget as HTMLImageElement).src = FALLBACK; }} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/55 to-transparent" />
                   <div className="absolute top-3 left-3 flex gap-2">
-                    <span className="bg-gold-500 text-navy-900 font-heading font-bold text-[9px] uppercase tracking-widest px-2.5 py-1">{category}</span>
-                    <span className="bg-navy-900/80 text-white text-[9px] font-medium px-2 py-1">{year}</span>
+                    <span className="bg-gold-500 text-blue-950 font-heading font-bold text-[9px] uppercase tracking-widest px-2.5 py-1">{category}</span>
+                    <span className="bg-blue-600/80 text-white text-[9px] font-medium px-2 py-1">{year}</span>
                   </div>
                   <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-white/80">
                     <MapPin size={11} />
@@ -137,7 +137,7 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-heading font-bold text-navy-900 text-sm mb-1.5 group-hover:text-gold-600 transition-colors leading-snug">{title}</h3>
+                  <h3 className="font-heading font-bold text-blue-900 text-sm mb-1.5 group-hover:text-gold-600 transition-colors leading-snug">{title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
@@ -154,24 +154,22 @@ export default function Projects() {
             <h2 className="section-title">On-Site Excellence</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 reveal" style={{ gridTemplateRows: 'repeat(2, 160px)' }}>
-            {/* Large featured */}
             <div className="col-span-2 row-span-2 relative overflow-hidden group">
               <img src={gallery[0].img} alt={gallery[0].cap}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = FALLBACK; }} />
-              <div className="absolute inset-0 bg-navy-950/0 group-hover:bg-navy-950/30 transition-colors" />
-              <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-navy-950/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute inset-0 bg-blue-950/0 group-hover:bg-blue-950/30 transition-colors" />
+              <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-blue-950/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                 <p className="text-white font-heading font-bold text-xs">{gallery[0].cap}</p>
               </div>
             </div>
-            {/* Smaller */}
             {gallery.slice(1).map(({ img, cap }) => (
               <div key={cap} className="relative overflow-hidden group">
                 <img src={img} alt={cap}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   onError={(e) => { (e.currentTarget as HTMLImageElement).src = FALLBACK; }} />
-                <div className="absolute inset-0 bg-navy-950/0 group-hover:bg-navy-950/40 transition-colors" />
-                <div className="absolute bottom-0 left-0 right-0 px-2 py-1.5 bg-gradient-to-t from-navy-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute inset-0 bg-blue-950/0 group-hover:bg-blue-950/40 transition-colors" />
+                <div className="absolute bottom-0 left-0 right-0 px-2 py-1.5 bg-gradient-to-t from-blue-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                   <p className="text-white font-heading font-bold text-[10px]">{cap}</p>
                 </div>
               </div>
@@ -181,7 +179,7 @@ export default function Projects() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-14 bg-navy-900">
+      <section className="py-12 md:py-14 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
             <div>
@@ -189,7 +187,7 @@ export default function Projects() {
                 Ready to Build Your<br />
                 <span className="text-gold-400">Next Project?</span>
               </h3>
-              <p className="text-white/55 text-sm mt-2 max-w-md leading-relaxed">
+              <p className="text-white/80 text-sm mt-2 max-w-md leading-relaxed">
                 Whether residential, commercial or infrastructure — our team is ready to deliver.
               </p>
             </div>

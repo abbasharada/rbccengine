@@ -20,7 +20,7 @@ export default function HomeNotices() {
             </div>
             <p className="text-gray-500 text-sm">Recent announcements and opportunities from RBCC Engineering.</p>
           </div>
-          <Link to="/notifications" className="btn-outline-navy self-end flex-shrink-0 !py-2.5 !px-5 !text-[10px]">
+          <Link to="/notifications" className="btn-outline-blue self-end flex-shrink-0 !py-2.5 !px-5 !text-[10px]">
             View All Notices <ArrowRight size={13} />
           </Link>
         </div>
@@ -36,7 +36,7 @@ export default function HomeNotices() {
                   <span className="text-[9px] font-heading font-bold uppercase tracking-widest px-2 py-0.5 bg-red-50 text-red-600 border border-red-200">Urgent</span>
                 )}
               </div>
-              <h3 className="font-heading font-bold text-navy-900 text-sm mb-2 group-hover:text-gold-600 transition-colors leading-snug">{notice.title}</h3>
+              <h3 className="font-heading font-bold text-blue-900 text-sm mb-2 group-hover:text-gold-600 transition-colors leading-snug">{notice.title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-2">{notice.summary}</p>
               <div className="flex items-center justify-between pt-3 border-t border-gray-100">
                 <div className="flex items-center gap-1.5 text-gray-400">
