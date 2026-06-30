@@ -61,7 +61,7 @@ export default function Hero() {
   return (
     <>
       {/* Fixed Sticky Marquee Announcement Bar */}
-      <div className="fixed top-0 left-0 right-0 bg-blue-600 text-white overflow-hidden py-2.5 z-[60] border-b border-amber-500/30 shadow-md">
+      <div className="fixed top-0 left-0 right-0 bg-blue-800 text-white overflow-hidden py-2.5 z-[60] border-b border-amber-500/30 shadow-md">
         <div className="whitespace-nowrap flex" style={{ minWidth: '100%' }}>
           <div className="animate-marquee flex gap-8 shrink-0 items-center" style={{ animationDuration: '12s' }}>
             <span className="inline-block text-[11px] font-bold tracking-wide uppercase text-white">

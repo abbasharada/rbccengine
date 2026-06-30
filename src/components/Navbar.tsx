@@ -27,7 +27,7 @@ export default function Navbar() {
   const isHomePage = location.pathname === '/';
 
   return (
-    <header className={`fixed top-8 left-0 right-0 z-50 transition-all duration-300 ${scrolled || !isHomePage ? 'bg-blue-600 shadow-lg' : 'bg-blue-600/85 backdrop-blur-sm'}`}>
+    <header className={`fixed top-8 left-0 right-0 z-50 transition-all duration-300 ${scrolled || !isHomePage ? 'bg-blue-700 shadow-lg' : 'bg-blue-600/85 backdrop-blur-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
