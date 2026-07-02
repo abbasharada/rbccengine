@@ -44,10 +44,10 @@ export default function Navbar() {
             />
             {/* Split layout structure for clear mobile typography */}
             <div className="flex flex-col">
-              <div className="font-heading font-black text-amber-400 text-base sm:text-[15px] tracking-wider sm:tracking-wide leading-none uppercase w-full">
+              <div className="font-heading font-black text-white text-base sm:text-[15px] tracking-wider sm:tracking-wide leading-none uppercase w-full">
                 RBCC
               </div>
-              <div className="text-amber-500 font-semibold text-[9px] sm:text-[10px] tracking-widest uppercase mt-0.5 leading-tight">
+              <div className="text-white font-semibold text-[9px] sm:text-[10px] tracking-widest uppercase mt-0.5 leading-tight">
                 Engineering <br />
                 & Global Services Ltd
               </div>
