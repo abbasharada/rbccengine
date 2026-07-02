@@ -4,31 +4,31 @@ import { ArrowRight } from 'lucide-react';
 
 const slides = [
   {
-    image: '/images/IMG-20260530-WA0037.jpg',
+    image: '/images/lux.jpg',
     fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920',
     service: 'Building Construction',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
-    image: '/images/IMG-20260602-WA0007.jpg',
+    image: '/images/penal.jpg',
     fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920',
     service: 'Mechanical & Electrical Services',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
-    image: '/images/IMG-20260531-WA0130.jpg',
+    image: '/images/tech2.jpg',
     fallback: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=1920',
     service: 'Electrical Engineering',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
-    image: '/images/IMG-20260530-WA0015.jpg',
+    image: '/images/solar.jpg',
     fallback: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=1920',
     service: 'Solar Energy Solutions',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
-    image: '/images/IMG-20260530-WA0037.jpg',
+    image: '/images/fin.jpg',
     fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920',
     service: 'Smart Home Automation',
     slogan: 'Building a Stronger Future Through Engineering',

@@ -6,7 +6,7 @@ const stats = [
   { v: '200+', l: 'Projects Delivered' },
   { v: '15+', l: 'Years Experience' },
   { v: '50+', l: 'Expert Engineers' },
-  { v: '500+', l: 'Satisfied Clients' },
+  { v: '200+', l: 'Satisfied Clients' },
 ];
 
 const values = [
@@ -33,7 +33,7 @@ const boardMembers = [
     img: '/images/noah.jpg'
   },
   { 
-    name: 'Ismail Sadiq', 
+    name: 'Arct. Ismail Sadiq', 
     title: 'Head of Architectural Department',
     img: '/images/arch.jpg'
   },

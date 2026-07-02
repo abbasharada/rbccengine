@@ -2,7 +2,7 @@ import { useReveal } from '../hooks/useReveal';
 import { Shield, Clock, Target, Award } from 'lucide-react';
 
 const stats = [
-  { value: '200+', label: 'Projects' },
+  { value: '50+', label: 'Projects' },
   { value: '15+', label: 'Years' },
   { value: '20+', label: 'Engineers' },
   { value: '50+', label: 'Clients' },
