@@ -24,7 +24,7 @@ export default function Notifications() {
   return (
     <>
       {/* Page Banner */}
-      <section className="bg-blue-950 pt-28 pb-12">
+      <section className="bg-blue-800 pt-28 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-px bg-gold-500" />
