@@ -5,7 +5,7 @@ const stats = [
   { value: '50+', label: 'Projects' },
   { value: '15+', label: 'Years' },
   { value: '20+', label: 'Engineers' },
-  { value: '50+', label: 'Clients' },
+  { value: '100+', label: 'Clients' },
 ];
 
 const values = [
@@ -35,7 +35,6 @@ export default function About() {
             <div className="absolute -bottom-3 -right-3 bg-navy-900 p-4 hidden md:flex items-start gap-2.5">
               <Award className="text-gold-400 flex-shrink-0 mt-0.5" size={20} />
               <div>
-                <p className="font-heading font-bold text-white text-[10px] uppercase tracking-wide">ISO Certified</p>
                 <p className="text-white/50 text-[10px] mt-0.5">Quality Management</p>
               </div>
             </div>

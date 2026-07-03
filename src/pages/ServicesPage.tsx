@@ -4,7 +4,7 @@ import { Building2, Wrench, Zap, Sun, Droplets, PaintBucket, Users, Home, Shield
 
 const services = [
   {
-    icon: Building2,
+    icon: ShieldCheck,
     title: 'Engineering Design & Consultancy',
     desc: 'We provide innovative, cost-effective, and standards-compliant engineering design and consultancy services, delivering safe, functional, and sustainable solutions tailored to residential, commercial, and industrial projects.',
     benefits: ['Architectural Design','Structural Design','Electrical Design','AutoCAD Drafting','BIM Modeling (Revit)','Lighting Design (DIALux)'],
@@ -15,7 +15,7 @@ const services = [
     fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
-    icon: Wrench,
+    icon: ShieldCheck,
     title: 'Electrical Engineering Services',
     desc: 'We deliver reliable electrical engineering solutions, from design and installation to testing, commissioning, maintenance, and troubleshooting, ensuring safety, efficiency, and compliance with industry standards.',
     benefits: ['Electrical Installations', 'Power Distribution Systems','Testing & Commissioning','Maintenance & Troubleshooting'],
@@ -26,7 +26,7 @@ const services = [
     fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
-    icon: Zap,
+    icon: ShieldCheck,
     title: 'Solar Energy Solutions',
     desc: 'We provide high-quality solar energy solutions that deliver clean, reliable, and cost-effective power through professional design, installation, and maintenance of solar photovoltaic and energy storage systems.',
     benefits: ['Solar PV System Design','Solar Installation', 'Solar Inverter Systems', 'Battery Storage Systems','Hybrid Power Systems', 'Operation & Maintenance'],
@@ -37,7 +37,7 @@ const services = [
     fallback: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
-    icon: Sun,
+    icon: ShieldCheck,
     title: 'Building Construction',
     desc: 'We provide comprehensive building construction services, delivering high-quality residential, commercial, and renovation projects with a strong commitment to safety, quality, timely completion, and client satisfaction.',
     benefits: ['Residential Construction', 'Commercial Construction', 'Renovation Works', 'Site Supervision'],
@@ -48,7 +48,7 @@ const services = [
     fallback: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
    {
-    icon: Sun,
+    icon: ShieldCheck,
     title: 'Archtecture Department',
     desc: 'Our Architectural Department Delivers Innovative, functional, and sustainable design Solutions for residential, commercial, industrial, and institutional projects. we transform ideas into practical designs that meet clients needs while complying with industry standard and building regulations',
     benefits: ['Architectural Design', 'Building Planning', '2D & 3D Building Designs', 'Interior & Exterior Design', 'Construction Drawings', 'Building Approval Documentation', 'Site Planning & Supervision', 'Architectural Consultation'],
@@ -59,7 +59,7 @@ const services = [
     fallback: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
-    icon: Droplets,
+    icon: ShieldCheck,
     title: 'Finishing Works',
     desc: 'We deliver premium finishing services that enhance the functionality, durability, and aesthetics of every project through skilled craftsmanship, quality materials, and attention to detail.',
     benefits: ['POP & Ceiling', 'Painting', 'Tiling', 'Interlocking', 'Screeding', 'Interior Finishing',],
@@ -71,7 +71,18 @@ const services = [
   },
   {
     icon: ShieldCheck,
-    title: 'Technology Division (Coming Soon)',
+    title: 'Automation (Coming Soon)',
+    desc: 'Our Technology Division is coming soon. Stay tuned for innovative solutions and services.',
+    benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
+    img1: '/images/tech.jpg',
+    img2: '/images/solar2.jpg',
+    img3: '/images/soon.jpg',
+    img4: '/images/tech1.jpg',
+    fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Technology (Coming Soon)',
     desc: 'Our Technology Division is coming soon. Stay tuned for innovative solutions and services.',
     benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
     img1: '/images/tech.jpg',
