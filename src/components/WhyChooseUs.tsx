@@ -21,10 +21,8 @@ export default function WhyChooseUs() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="reveal">
-            <span className="font-heading font-bold text-gold-400 uppercase tracking-widest text-[10px] mb-3 block">Why RBCC</span>
-            <h2 className="section-title-white mb-4">
-              The RBCC <span className="text-gold-400">Advantage</span>
-            </h2>
+            <span className="font-heading font-bold text-gold-400 uppercase tracking-widest text-[30px] mb-3 block">Why Choose Us</span>
+          
             <p className="text-white/65 text-sm leading-relaxed mb-6">
               We combine technical excellence with proven construction methodologies to deliver
               results that exceed expectations — on time and within budget.

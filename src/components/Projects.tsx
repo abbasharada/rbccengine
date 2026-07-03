@@ -22,77 +22,64 @@ const featured = [
     year: '2026',
   },
   {
-    title: 'Site Supervision & Engineering',
-    category: 'Solar Setting',
-    location: 'Northern Nigeria',
-    desc: 'RBCC engineers and foremen overseeing reinforced concrete slab works, quality inspection and monitoring.',
+    title: 'Modern Residential Villa',
+    category: 'Construction',
+    location: 'Abuja, FCT',
+    desc: 'Premium structural execution, interior masonry, and luxury finishing works.',
+    img: '/images/solar5.jpg',
+    year: '2026',
+  },
+  {
+    title: 'Solar Power Installation',
+    category: 'Electrical Engineering',
+    location: 'Kano State',
+    desc: 'Sustainable clean energy infrastructure development and system integration.',
     img: '/images/solar.jpg',
-    year: '2026',
-  },
-  {
-    title: 'Multi-Unit Housing Development',
-    category: 'solar Battaries',
-    location: 'Abuja, FCT',
-    desc: 'Large-scale housing estate featuring multiple residential blocks with drainage, road network and MEP installations.',
-    img: '/images/solar4.jpg',
-    year: '2026',
-  },
-  {
-    title: 'Multi-Unit Housing Development',
-    category: 'Construction',
-    location: 'Abuja, FCT',
-    desc: 'Large-scale housing estate featuring multiple residential blocks with drainage, road network and MEP installations.',
-    img: '/images/fin1.jpg',
-    year: '2026',
-  },
-  {
-    title: 'Multi-Unit Housing Development',
-    category: 'Construction',
-    location: 'Abuja, FCT',
-    img: '/images/fin.jpg',
-    year: '2026',
-  },
-   {
-    title: 'Multi-Unit Housing Development',
-    category: 'Construction',
-    location: 'Abuja, FCT',
-    img: '/images/toi1.jpg',
-    year: '2026',
-  },
-   {
-    title: 'Multi-Unit Housing Development',
-    category: 'Construction',
-    location: 'Abuja, FCT',
-    img: '/images/toi.jpg',
-    year: '2026',
-  },
-   {
-    title: 'Multi-Unit Housing Development',
-    category: 'Construction',
-    location: 'Abuja, FCT',
-    img: '/images/tech.jpg',
-    year: '2026',
-  },
-   {
-    title: 'Multi-Unit Housing Development',
-    category: 'Construction',
-    location: 'Abuja, FCT',
-    img: '/images/tech1.jpg',
     year: '2026',
   },
 ];
 
 const gallery = [
-  { img: '/images/IMG-20260530-WA0037.jpg', cap: 'Multi-Storey Complex', span: 'col-span-2 row-span-2' },
-  { img: '/images/IMG-20260602-WA0007.jpg', cap: 'Site Engineering Team', span: '' },
-  { img: '/images/IMG-20260531-WA0130.jpg', cap: 'Foundation Works', span: '' },
-  { img: '/images/IMG-20260530-WA0015.jpg', cap: 'Housing Development', span: '' },
-  { img: '/images/IMG-20260530-WA0037.jpg', cap: 'Structural Works', span: '' },
+  { img: '/images/1.jpeg', cap: 'Multi-Storey Complex', span: 'col-span-2 row-span-2' },
+  { img: '/images/2.jpeg', cap: 'Site Engineering Team', span: '' },
+  { img: '/images/3.jpeg', cap: 'Foundation Works', span: '' },
+  { img: '/images/4.jpeg', cap: 'Housing Development', span: '' },
+  { img: '/images/5.jpeg', cap: 'Structural Works', span: '' },
+  { img: '/images/6.jpeg', cap: 'Interior Finishing', span: '' },
+  { img: '/images/7.jpeg', cap: 'Roofing Installation', span: '' },
+  { img: '/images/8.jpeg', cap: 'Electrical Systems', span: 'col-span-2' },
+  { img: '/images/nine.jpeg', cap: 'Solar Infrastructure', span: '' },
+  { img: '/images/10.jpeg', cap: 'Drainage Systems', span: '' },
+  { img: '/images/11.jpeg', cap: 'Plastering Works', span: '' },
+  { img: '/images/12.jpeg', cap: 'Completed Project View', span: '' },
+  { img: '/images/13.jpeg', cap: 'Completed Project View', span: '' },
+  { img: '/images/14.jpeg', cap: 'Solar Infrastructure', span: '' },
+  { img: '/images/15.jpeg', cap: 'Drainage Systems', span: '' },
+  { img: '/images/16.jpeg', cap: 'Plastering Works', span: '' },
+  { img: '/images/17.jpeg', cap: 'Completed Project View', span: '' },
+  { img: '/images/18.jpeg', cap: 'Completed Project View', span: '' },
+  { img: '/images/solar.jpg', cap: 'Plastering Works', span: '' },
+  { img: '/images/solar6.jpg', cap: 'Completed Project View', span: '' },
+  { img: '/images/solar4.jpg', cap: 'Completed Project View', span: '' },
+];
+
+// Added video playlist array below
+const videos = [
+  { src: '/videos/video.mp4', title: 'Finishing & Paving Works' },
+  { src: '/videos/video1.mp4', title: 'On-Site Drainage Engineering' },
+  { src: '/videos/video2.mp4', title: 'Structural Structural Build Phase' },
+  { src: '/videos/video3.mp4', title: 'Finishing & Paving Works' },
+  { src: '/videos/video4.mp4', title: 'On-Site Drainage Engineering' },
+  { src: '/videos/video5.mp4', title: 'Structural Structural Build Phase' },
+   { src: '/videos/video6.mp4', title: 'Finishing & Paving Works' },
+  { src: '/videos/video7.mp4', title: 'On-Site Drainage Engineering' },
+  { src: '/videos/video8.mp4', title: 'Structural Structural Build Phase' },
 ];
 
 export default function Projects() {
   const introRef = useReveal();
   const featuredRef = useReveal();
+  const videoRef = useReveal(); // Added video reveal ref
   const galleryRef = useReveal();
   const navigate = useNavigate();
 
@@ -112,10 +99,10 @@ export default function Projects() {
           </div>
           <h1 className="font-heading font-black text-white text-3xl md:text-4xl lg:text-5xl">
             Projects That<br />
-            <span className="text-gold-400">Define Excellence</span>
+            <span className="text-white">Define Excellence</span>
           </h1>
           <p className="text-white/65 text-sm mt-3 max-w-lg leading-relaxed">
-            A portfolio of engineering precision, structural integrity and construction quality delivered across Nigeria.
+            Showcasing engineering excellence through high-quality construction, structural integrity, and innovative project delivery across Nigeria.
           </p>
         </div>
       </section>
@@ -131,9 +118,7 @@ export default function Projects() {
                 <span className="text-gold-600">Across Every Project</span>
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Every project we undertake reflects RBCC Engineering's commitment to structural quality, precision
-                and professional site management. From residential housing to commercial complexes and civil
-                infrastructure — we deliver to the highest standards.
+                At RBCC Engineering & Global Services Ltd, every project reflects our commitment to quality, precision, safety, and timely delivery. From residential buildings to commercial developments and civil infrastructure, we consistently deliver engineering solutions that exceed client expectations.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-3 reveal">
@@ -180,6 +165,33 @@ export default function Projects() {
                 <div className="p-4">
                   <h3 className="font-heading font-bold text-blue-900 text-sm mb-1.5 group-hover:text-gold-600 transition-colors leading-snug">{title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Project Videos Section (Added Below) */}
+      <section ref={videoRef as React.RefObject<HTMLElement>} className="py-12 md:py-14 bg-gray-100 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 reveal">
+            <span className="section-heading">Video Highlights</span>
+            <h2 className="section-title">Operations In Action</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
+            {videos.map(({ src, title }) => (
+              <div key={title} className="bg-white border border-gray-200 p-2 shadow-sm flex flex-col justify-between">
+                <div className="relative aspect-[9/16] sm:aspect-video lg:aspect-[9/16] bg-black overflow-hidden max-h-[480px] mx-auto w-full">
+                  <video 
+                    src={src} 
+                    controls 
+                    preload="metadata"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-3 bg-white">
+                  <h3 className="font-heading font-bold text-blue-950 text-xs tracking-wide">{title}</h3>
                 </div>
               </div>
             ))}

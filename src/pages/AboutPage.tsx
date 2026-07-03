@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { Shield, Clock, Target, Users, Award, CheckCircle, ArrowRight, Star, TrendingUp, User } from 'lucide-react';
 
 const stats = [
-  { v: '200+', l: 'Projects Delivered' },
+  { v: '50+', l: 'Projects Delivered' },
   { v: '15+', l: 'Years Experience' },
   { v: '50+', l: 'Expert Engineers' },
-  { v: '200+', l: 'Satisfied Clients' },
+  { v: '100+', l: 'Satisfied Clients' },
 ];
 
 const values = [
@@ -17,12 +17,10 @@ const values = [
 ];
 
 const milestones = [
-  { year: '2011', event: 'RBCC Engineering incorporated in Nigeria' },
+  { year: '2025', event: 'RBCC Engineering incorporated in Nigeria' },
   { year: '2015', event: 'Expanded operations to Northern Nigeria' },
-  { year: '2018', event: 'ISO 9001:2015 Quality Management certification' },
   { year: '2022', event: 'Launched Solar Energy division' },
-  { year: '2024', event: 'Opened second office in Kano State' },
-  { year: '2026', event: '200+ projects milestone achieved' },
+  { year: '2026', event: '100+ projects milestone achieved' },
 ];
 
 // Updated board members configuration matching images verbatim
@@ -40,7 +38,7 @@ const boardMembers = [
   { 
     name: 'Musa Musa Kabir', 
     title: 'Director of Global Projects & Strategy',
-    img: '/images/solar1.jpg'
+    img: '/images/las.jpg'
   },
 ];
 
@@ -105,7 +103,6 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
               <div className="absolute top-0 left-0 w-1.5 h-full bg-amber-500" />
               <div className="absolute -bottom-4 -right-4 bg-blue-900 border border-white/10 p-4 hidden md:block rounded shadow-xl">
                 <Award className="text-amber-400 mb-1" size={24} />
-                <p className="font-heading font-bold text-white text-[10px] uppercase tracking-wide">ISO Certified</p>
                 <p className="text-white/60 text-[9px] mt-0.5 font-medium">Quality Management</p>
               </div>
             </div>
@@ -158,7 +155,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
               <div className="relative group">
                 <div className="aspect-[4/5] bg-gray-100 overflow-hidden rounded-lg relative border border-gray-200">
                   <img 
-                    src="/images/C.E.O.jpeg" 
+                    src="/images/C.E.1.jpg" 
                     alt="Engr. Rabiu Lawan Muhammad"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800'; }}
@@ -172,7 +169,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
               {/* Welcome Message */}
               <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
                 <h4 className="font-heading font-bold text-blue-900 text-xs uppercase tracking-wider text-amber-600">
-                  Welcome Message
+                  Welcome to RBCC
                 </h4>
                 <p className="font-semibold text-blue-900 text-sm">Welcome to RBCC Engineering and Global Services Ltd.</p>
                 <p className="text-gray-600 text-xs leading-relaxed">
@@ -185,7 +182,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                   <p className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
                     Thank you for choosing RBCC Engineering Ltd.<br />
                     <span className="text-amber-600 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
-                    <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder & Managing Director</span>
+                    <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder & C.E.O</span>
                   </p>
                 </div>
               </div>
@@ -195,13 +192,13 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
             <div className="lg:col-span-7 space-y-5">
               <div>
                 <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-2.5 py-1 rounded inline-block mb-3">
-                  Managing Director / CEO Profile
+                  Founder / CEO
                 </span>
                 <h3 className="font-heading font-black text-blue-900 text-xl md:text-2xl uppercase tracking-wide">
                   Engr. Rabiu Lawan Muhammad
                 </h3>
                 <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5">
-                  Managing Director & CEO, RBCC Engineering
+                  Founder & CEO, RBCC Engineering
                 </p>
               </div>
 
@@ -316,17 +313,14 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
-              <span className="font-heading font-bold text-amber-400 uppercase tracking-widest text-[10px] mb-3 block">Why Choose Us</span>
-              <h2 className="font-heading font-black text-white text-2xl md:text-3xl uppercase tracking-tight mb-5">
-                The RBCC<br />
-                <span className="text-amber-400">Advantage</span>
-              </h2>
+              <span className="font-heading font-bold text-amber-400 uppercase tracking-widest text-[30px] mb-3 block">Why Choose Us</span>
+              
               <p className="text-white/70 text-sm leading-relaxed mb-6 font-medium">
                 We combine technical expertise with proven construction methodologies to deliver
                 results that exceed expectations — on time and within budget.
               </p>
               <ul className="space-y-3">
-                {['ISO 9001:2015 Certified Quality Management', 'Two operational offices serving Nigeria', 'End-to-end project delivery', 'Licensed engineers and skilled craftsmen'].map((item) => (
+                {['Two operational offices serving Nigeria', 'End-to-end project delivery', 'Licensed engineers and skilled craftsmen'].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <CheckCircle size={15} className="text-amber-400 flex-shrink-0" />
                     <span className="text-white/85 text-sm font-medium">{item}</span>
