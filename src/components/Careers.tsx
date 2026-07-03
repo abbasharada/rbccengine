@@ -52,7 +52,7 @@ export default function Careers() {
     <>
       {/* Page Banner */}
       <section className="relative bg-blue-100 pt-28 pb-14 ">
-        <div className="absolute inset-0 opacity-50">
+        <div className="absolute inset-0 opacity-100">
           <img src="/images/IMG-20260602-WA0007.jpg" alt="" className="w-full h-full object-cover"
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }} />
         </div>
