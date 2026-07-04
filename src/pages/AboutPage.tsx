@@ -37,7 +37,7 @@ const boardMembers = [
   },
   { 
     name: 'Aliyu Muhammad Hussain', 
-    title: 'Head, Finishig Services Department',
+    title: 'Head, Finishing Services Department',
     img: '/images/las.jpg'
   },
 ];
@@ -81,9 +81,9 @@ export default function AboutPage() {
               <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
                 <p>
                   <strong className="text-blue-900 font-bold">RBCC Engineering and Global Services Ltd</strong> is a Nigerian engineering and construction company committed to delivering high-quality, reliable, and innovative solutions across various sectors of the construction and engineering industry.
-The company provides a wide range of services, including building construction, electrical engineering services, plumbing, painting, POP installation, plastering, screeding, block work, tiling, interlocking, carpentry, project supervision, and general construction works.
-At RBCC Engineering, we are dedicated to excellence, professionalism, safety, integrity, and customer satisfaction. Our goal is to deliver projects that meet the highest standards of quality while creating lasting value for our clients and communities.
-Through skilled workmanship, technical expertise, and a commitment to continuous improvement, RBCC Engineering strives to be a trusted partner in engineering and construction, contributing to sustainable development and infrastructure growth across Nigeria.
+                  The company provides a wide range of services, including building construction, electrical engineering services, plumbing, painting, POP installation, plastering, screeding, block work, tiling, interlocking, carpentry, project supervision, and general construction works.
+                  At RBCC Engineering, we are dedicated to excellence, professionalism, safety, integrity, and customer satisfaction. Our goal is to deliver projects that meet the highest standards of quality while creating lasting value for our clients and communities.
+                  Through skilled workmanship, technical expertise, and a commitment to continuous improvement, RBCC Engineering strives to be a trusted partner in engineering and construction, contributing to sustainable development and infrastructure growth across Nigeria.
                 </p>
                 <p>
                   Headquartered in Abuja with a regional office in Kano State, we have successfully delivered over 200 projects
@@ -171,11 +171,10 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-5">
                 <div>
-                 
                   <h3 className="font-heading font-black text-blue-900 text-xl md:text-2xl uppercase tracking-wide">
                     Engr. Rabiu Lawan Muhammad
                   </h3>
-                  <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5">
+                  <p className="text-blue-900 text-[11px] font-black uppercase tracking-wider mt-0.5">
                     Founder / CEO, RBCC
                   </p>
                 </div>
@@ -197,7 +196,6 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
               {/* Welcome Message shifted here, directly under the engineer profile content */}
               <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
                 <h4 className="font-heading font-bold text-blue-900 text-xs uppercase tracking-wider text-amber-600">
-                 
                 </h4>
                 <p className="font-semibold text-blue-900 text-sm">Welcome to RBCC Engineering and Global Services Ltd.</p>
                 <p className="text-gray-600 text-xs leading-relaxed">
@@ -210,7 +208,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                   <p className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
                     Thank you for choosing RBCC<br />
                     <span className="text-amber-600 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
-                    <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder / C.E.O</span>
+                    <span className="text-blue-900 font-sans text-[9px] block font-black">Founder / C.E.O</span>
                   </p>
                 </div>
               </div>
@@ -218,7 +216,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
 
           </div>
 
-          {/* Board Members Layout Grid utilizing 1000016660.jpg, 1000017393.jpg, and 1000012609.jpg */}
+          {/* Board Members Layout Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {boardMembers.map((member, i) => (
               <div key={i} className="bg-white border border-gray-200/60 p-5 rounded-lg shadow-sm hover:border-amber-500/40 transition-all group reveal">
@@ -234,7 +232,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                 <h4 className="font-heading font-bold text-blue-900 text-base group-hover:text-amber-500 transition-colors uppercase tracking-wide">
                   {member.name}
                 </h4>
-                <p className="text-gray-500 text-[11px] font-semibold uppercase tracking-wider mt-0.5">
+                <p className="text-blue-900 group-hover:text-amber-500 transition-colors text-[11px] font-black uppercase tracking-wider mt-0.5">
                   {member.title}
                 </p>
               </div>
@@ -246,22 +244,20 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
 
       {/* Core Values */}
       <section ref={valuesRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-white border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-xl mx-auto mb-10 reveal">
-            <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">What Drives Us</span>
-            <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Core Values</h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {values.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="reveal text-center p-6 bg-gray-50 border border-gray-100 hover:border-amber-500/40 transition-all rounded">
-                <div className="w-12 h-12 bg-blue-900 flex items-center justify-center mx-auto mb-4">
-                  <Icon size={20} className="text-amber-400" />
-                </div>
-                <h3 className="font-heading font-bold text-blue-900 text-sm uppercase tracking-wider mb-2">{title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
+        <div className="text-center max-w-xl mx-auto mb-10 reveal">
+          <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">What Drives Us</span>
+          <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Core Values</h2>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {values.map(({ icon: Icon, title, desc }) => (
+            <div key={title} className="reveal text-center p-6 bg-gray-50 border border-gray-100 hover:border-amber-500/40 transition-all rounded">
+              <div className="w-12 h-12 bg-blue-900 flex items-center justify-center mx-auto mb-4">
+                <Icon size={20} className="text-amber-400" />
               </div>
-            ))}
-          </div>
+              <h3 className="font-heading font-bold text-blue-900 text-sm uppercase tracking-wider mb-2">{title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
