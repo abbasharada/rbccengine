@@ -52,7 +52,7 @@ export default function Navbar() {
                 & Global Services Ltd
               </div>
               {/* Added RC Registration Number */}
-              <div className="text-amber-400 font-sans font-bold text-[7px] sm:text-[8px] tracking-wider uppercase mt-1 opacity-90">
+              <div className="text-amber-400 font-sans font-bold text-[12px] sm:text-[13px] tracking-wider uppercase mt-1 opacity-90">
                 RC NO: 8283902
               </div>
             </div>
