@@ -178,7 +178,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                     Engr. Rabiu Lawan Muhammad
                   </h3>
                   <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5">
-                    Founder & CEO, RBCC Engineering
+                    Founder & CEO, RBCC
                   </p>
                 </div>
 
