@@ -53,7 +53,7 @@ export default function Navbar() {
               </div>
               {/* Added RC Registration Number */}
               <div className="text-white font-sans font-bold text-[12px] sm:text-[13px] tracking-wider uppercase mt-1 opacity-90">
-                RC NO: 8283902
+                RC: 8283902
               </div>
             </div>
           </Link>
