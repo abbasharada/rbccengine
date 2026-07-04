@@ -114,21 +114,21 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
       <section className="py-14 md:py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 border border-gray-100 p-6 md:p-8 rounded reveal">
-              <div className="w-10 h-10 bg-blue-900 flex items-center justify-center mb-4">
+            <div className="bg-blue-900 border border-blue-950/20 p-6 md:p-8 rounded shadow-md reveal">
+              <div className="w-10 h-10 bg-white/10 flex items-center justify-center mb-4 rounded">
                 <Target size={18} className="text-amber-400" />
               </div>
-              <h3 className="font-heading font-bold text-blue-900 text-base uppercase tracking-wide mb-3">Our Vision</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="font-heading font-bold text-amber-400 text-base uppercase tracking-wide mb-3">Our Vision</h3>
+              <p className="text-white/90 text-sm leading-relaxed">
                 To become a leading engineering and construction company recognized for excellence, innovation, quality, and integrity in Nigeria and beyond.
               </p>
             </div>
-            <div className="bg-gray-50 border border-gray-100 p-6 md:p-8 rounded reveal">
-              <div className="w-10 h-10 bg-blue-900 flex items-center justify-center mb-4">
+            <div className="bg-blue-900 border border-blue-950/20 p-6 md:p-8 rounded shadow-md reveal">
+              <div className="w-10 h-10 bg-white/10 flex items-center justify-center mb-4 rounded">
                 <TrendingUp size={18} className="text-amber-400" />
               </div>
-              <h3 className="font-heading font-bold text-blue-900 text-base uppercase tracking-wide mb-3">Our Mission</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="font-heading font-bold text-amber-400 text-base uppercase tracking-wide mb-3">Our Mission</h3>
+              <p className="text-white/90 text-sm leading-relaxed">
                 To provide professional engineering and construction services that deliver value, exceed client expectations, and contribute to sustainable development through quality workmanship, technical expertise, and exceptional service.
               </p>
             </div>
