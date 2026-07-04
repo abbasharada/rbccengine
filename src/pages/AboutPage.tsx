@@ -5,7 +5,7 @@ import { Shield, Clock, Target, Users, Award, CheckCircle, ArrowRight, Star, Tre
 const stats = [
   { v: '50+', l: 'Projects Delivered' },
   { v: '15+', l: 'Years Experience' },
-  { v: '50+', l: 'Expert Engineers' },
+  { v: '20+', l: 'Engineers' },
   { v: '50+', l: 'Clients' },
 ];
 
