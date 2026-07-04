@@ -51,6 +51,10 @@ export default function Navbar() {
                 Engineering <br />
                 & Global Services Ltd
               </div>
+              {/* Added RC Registration Number */}
+              <div className="text-white font-sans font-bold text-[12px] sm:text-[13px] tracking-wider uppercase mt-1 opacity-90">
+                RC: 8283902
+              </div>
             </div>
           </Link>
 
@@ -81,7 +85,7 @@ export default function Navbar() {
                 <span className="font-heading font-semibold text-[11px] tracking-wide">0903 573 7455</span>
               </a>
             </div>
-            
+
             <Link to="/contact" className="hidden sm:inline-flex btn-primary !py-2.5 !px-5 !text-[11px] font-bold uppercase tracking-wider !bg-gold-500 hover:bg-amber-600 text-blue-950 transition-colors rounded">
               Get a Quote
             </Link>

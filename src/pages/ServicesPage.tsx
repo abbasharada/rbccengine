@@ -71,7 +71,7 @@ const services = [
   },
   {
     icon: ShieldCheck,
-    title: 'Automation (Coming Soon)',
+    title: 'Automation',
     desc: 'Our Technology Division is coming soon. Stay tuned for innovative solutions and services.',
     benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
     img1: '/images/tech.jpg',
@@ -82,7 +82,7 @@ const services = [
   },
   {
     icon: ShieldCheck,
-    title: 'Technology (Coming Soon)',
+    title: 'Tech Department (Coming Soon)',
     desc: 'Our Technology Division is coming soon. Stay tuned for innovative solutions and services.',
     benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
     img1: '/images/tech.jpg',
