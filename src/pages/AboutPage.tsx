@@ -210,7 +210,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                 </p>
                 <div className="pt-2 border-t border-gray-200">
                   <p className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
-                    Thank you for choosing RBCC Engineering Ltd.<br />
+                    Thank you for choosing RBCC<br />
                     <span className="text-amber-600 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
                     <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder & C.E.O</span>
                   </p>
