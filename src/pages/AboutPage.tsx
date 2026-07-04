@@ -171,14 +171,12 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-5">
                 <div>
-                  <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-2.5 py-1 rounded inline-block mb-3">
-                    Founder / CEO
-                  </span>
+                 
                   <h3 className="font-heading font-black text-blue-900 text-xl md:text-2xl uppercase tracking-wide">
                     Engr. Rabiu Lawan Muhammad
                   </h3>
                   <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5">
-                    Founder & CEO, RBCC
+                    Founder / CEO, RBCC
                   </p>
                 </div>
 
@@ -212,7 +210,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                   <p className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
                     Thank you for choosing RBCC<br />
                     <span className="text-amber-600 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
-                    <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder & C.E.O</span>
+                    <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder / C.E.O</span>
                   </p>
                 </div>
               </div>
