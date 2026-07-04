@@ -84,7 +84,7 @@ export default function Hero() {
 
       {/* Hero Section */}
       <section id="home" className="relative h-screen min-h-[580px] flex flex-col justify-center overflow-hidden pt-12">
-        
+
         {/* Background Slides - Clean & Filterless Visual Presentation */}
         <div className="absolute inset-0 z-0">
           {slides.map((slide, index) => (
@@ -95,7 +95,7 @@ export default function Hero() {
               <img
                 src={slide.image}
                 alt={slide.service}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-contain object-center"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = slide.fallback; }}
                 onLoad={() => handleImageLoad(index)}
               />
