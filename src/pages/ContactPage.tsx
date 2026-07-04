@@ -61,7 +61,7 @@ export default function ContactPage() {
       {/* Hero Banner */}
       <section className="relative pt-28 pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/solar6.jpg" alt="RBCC Engineering contact"
+          <img src="/images/cont.png" alt="RBCC Engineering contact"
             className="w-full h-full object-cover object-center"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920'; }} />
           <div className="absolute inset-0 bg-blue-90/70" />
