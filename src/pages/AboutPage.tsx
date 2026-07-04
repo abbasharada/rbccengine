@@ -199,7 +199,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
               {/* Welcome Message shifted here, directly under the engineer profile content */}
               <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
                 <h4 className="font-heading font-bold text-blue-900 text-xs uppercase tracking-wider text-amber-600">
-                  Welcome to RBCC
+                 
                 </h4>
                 <p className="font-semibold text-blue-900 text-sm">Welcome to RBCC Engineering and Global Services Ltd.</p>
                 <p className="text-gray-600 text-xs leading-relaxed">
