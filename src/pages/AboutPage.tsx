@@ -205,11 +205,11 @@ export default function AboutPage() {
                   We value the trust our clients place in us and look forward to building lasting relationships through exceptional service and successful project delivery.
                 </p>
                 <div className="pt-2 border-t border-gray-200">
-                  <p className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
+                  <div className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
                     Thank you for choosing RBCC<br />
-                    <span className="text-amber-600 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
+                    <span className="text-blue-900 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
                     <span className="text-blue-900 font-sans text-[9px] block font-black">Founder / C.E.O</span>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -244,20 +244,21 @@ export default function AboutPage() {
 
       {/* Core Values */}
       <section ref={valuesRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-white border-t border-gray-100">
-        <div className="text-center max-w-xl mx-auto mb-10 reveal">
-          <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">What Drives Us</span>
-          <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Core Values</h2>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {values.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="reveal text-center p-6 bg-gray-50 border border-gray-100 hover:border-amber-500/40 transition-all rounded">
-              <div className="w-12 h-12 bg-blue-900 flex items-center justify-center mx-auto mb-4">
-                <Icon size={20} className="text-amber-400" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-xl mx-auto mb-10 reveal">
+            <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Core Values</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {values.map(({ icon: Icon, title, desc }) => (
+              <div key={title} className="reveal text-center p-6 bg-gray-50 border border-gray-100 hover:border-amber-500/40 transition-all rounded">
+                <div className="w-12 h-12 bg-blue-900 flex items-center justify-center mx-auto mb-4">
+                  <Icon size={20} className="text-amber-400" />
+                </div>
+                <h3 className="font-heading font-bold text-blue-900 text-sm uppercase tracking-wider mb-2">{title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
               </div>
-              <h3 className="font-heading font-bold text-blue-900 text-sm uppercase tracking-wider mb-2">{title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -279,7 +280,6 @@ export default function AboutPage() {
       <section className="py-14 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-xl mx-auto mb-10 reveal">
-            <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">Our Journey</span>
             <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Milestones</h2>
           </div>
           <div className="relative reveal">
@@ -287,65 +287,4 @@ export default function AboutPage() {
             <div className="space-y-6">
               {milestones.map(({ year, event }, i) => (
                 <div key={year} className={`relative flex items-center gap-4 md:gap-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                  <div className={`flex-1 ${i % 2 === 0 ? 'md:text-right' : 'md:text-left'} hidden md:block`}>
-                    <p className="text-gray-600 text-sm font-medium">{event}</p>
-                  </div>
-                  <div className="relative z-10 w-8 h-8 bg-blue-900 border-4 border-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Star size={12} className="text-amber-400" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-heading font-bold text-blue-900 text-sm tracking-wide">{year}</p>
-                    <p className="text-gray-600 text-sm mt-0.5 md:hidden font-medium">{event}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose RBCC */}
-      <section ref={whyRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-blue-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <div className="reveal">
-              <span className="font-heading font-bold text-amber-400 uppercase tracking-widest text-[30px] mb-3 block">Why Choose Us</span>
-              
-              <p className="text-white/70 text-sm leading-relaxed mb-6 font-medium">
-                We combine technical expertise with proven construction methodologies to deliver
-                results that exceed expectations — on time and within budget.
-              </p>
-              <ul className="space-y-3">
-                {['Two operational offices serving Nigeria', 'End-to-end project delivery', 'Licensed engineers and skilled craftsmen'].map((item) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <CheckCircle size={15} className="text-amber-400 flex-shrink-0" />
-                    <span className="text-white/85 text-sm font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link to="/contact" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-blue-950 px-6 py-3 rounded font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 mt-7 transition-colors shadow-lg">
-                Start Your Project <ArrowRight size={14} />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-14 bg-gray-50 border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="font-heading font-black text-blue-900 text-xl uppercase tracking-wide mb-3">Ready to Build Your Next Project?</h3>
-          <p className="text-gray-600 text-sm mb-6 font-medium">Contact us today to discuss your engineering and construction needs.</p>
-          <div className="flex justify-center gap-3">
-            <Link to="/contact" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-blue-950 px-5 py-2.5 rounded font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
-              Contact Us <ArrowRight size={14} />
-            </Link>
-            <Link to="/projects" className="border-2 border-blue-950 hover:bg-blue-950 hover:text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all">
-              View Projects
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
+                  <div className={`flex-1 ${i
