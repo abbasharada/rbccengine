@@ -311,7 +311,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
       {/* Why Choose RBCC */}
       <section ref={whyRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl">
             <div className="reveal">
               <span className="font-heading font-bold text-amber-400 uppercase tracking-widest text-[30px] mb-3 block">Why Choose Us</span>
               
@@ -330,11 +330,6 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
               <Link to="/contact" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-blue-950 px-6 py-3 rounded font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 mt-7 transition-colors shadow-lg">
                 Start Your Project <ArrowRight size={14} />
               </Link>
-            </div>
-            <div className="reveal-right">
-              <img src="/images/IMG-20260531-WA0130.jpg" alt="RBCC Engineering quality"
-                className="w-full h-72 object-cover rounded shadow-md"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800'; }} />
             </div>
           </div>
         </div>
