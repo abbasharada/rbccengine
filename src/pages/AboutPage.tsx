@@ -64,7 +64,7 @@ export default function AboutPage() {
           </div>
           <h1 className="font-heading font-black text-white text-3xl md:text-4xl lg:text-5xl uppercase tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             About<br />
-            <span className="text-amber-400">RBCC Engineering</span>
+            <span className="text-amber-400">RBCC</span>
           </h1>
           <p className="text-white text-sm mt-3 max-w-xl font-semibold leading-relaxed drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.9)]">
             A multidisciplinary engineering and construction firm delivering excellence across Nigeria since 2011.
