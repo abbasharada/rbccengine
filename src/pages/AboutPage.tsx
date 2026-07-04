@@ -150,8 +150,8 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
           {/* CEO / MD Feature Row */}
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-16 bg-white border border-gray-200/60 p-6 md:p-10 rounded-xl shadow-sm reveal">
 
-            {/* Left Column: Image and Welcome Address */}
-            <div className="lg:col-span-5 space-y-6">
+            {/* Left Column: Image Profile Only */}
+            <div className="lg:col-span-5">
               <div className="relative group">
                 <div className="aspect-[4/5] bg-gray-100 overflow-hidden rounded-lg relative border border-gray-200">
                   <img 
@@ -165,8 +165,38 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                   <User size={20} />
                 </div>
               </div>
+            </div>
 
-              {/* Welcome Message */}
+            {/* Right Column: Executive Profile Biography & Welcome Message underneath it */}
+            <div className="lg:col-span-7 space-y-6">
+              <div className="space-y-5">
+                <div>
+                  <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-2.5 py-1 rounded inline-block mb-3">
+                    Founder / CEO
+                  </span>
+                  <h3 className="font-heading font-black text-blue-900 text-xl md:text-2xl uppercase tracking-wide">
+                    Engr. Rabiu Lawan Muhammad
+                  </h3>
+                  <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5">
+                    Founder & CEO, RBCC Engineering
+                  </p>
+                </div>
+
+                <div className="space-y-4 text-gray-700 text-sm leading-relaxed border-l-2 border-amber-500 pl-5 italic font-medium">
+                  <p>
+                    "Founder and Managing Director of RBCC Engineering and Global Services Ltd. He holds a Bachelor's Degree in Electrical and Electronics Engineering and has practical experience in engineering, construction, project management, technical design, and business development.
+                    He has earned various professional certifications and completed specialized training in engineering, construction, and technical disciplines. He is proficient in industry-standard software used for engineering design, lighting design, drafting, project planning, analysis, and documentation.
+                    Driven by excellence, integrity, and professionalism, he founded RBCC Engineering with a vision to provide reliable engineering and construction solutions that create lasting value for clients, communities, and stakeholders."
+                  </p>
+                  <p>
+                    "We remain dedicated to raising industry standards through innovation, integrity, and an unwavering
+                    focus on engineering excellence. When you partner with RBCC, you're choosing a team that treats every
+                    project as our own."
+                  </p>
+                </div>
+              </div>
+
+              {/* Welcome Message shifted here, directly under the engineer profile content */}
               <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
                 <h4 className="font-heading font-bold text-blue-900 text-xs uppercase tracking-wider text-amber-600">
                   Welcome to RBCC
@@ -185,34 +215,6 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                     <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder & C.E.O</span>
                   </p>
                 </div>
-              </div>
-            </div>
-
-            {/* Right Column: Executive Profile Biography */}
-            <div className="lg:col-span-7 space-y-5">
-              <div>
-                <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-2.5 py-1 rounded inline-block mb-3">
-                  Founder / CEO
-                </span>
-                <h3 className="font-heading font-black text-blue-900 text-xl md:text-2xl uppercase tracking-wide">
-                  Engr. Rabiu Lawan Muhammad
-                </h3>
-                <p className="text-gray-500 text-[11px] font-bold uppercase tracking-wider mt-0.5">
-                  Founder & CEO, RBCC Engineering
-                </p>
-              </div>
-
-              <div className="space-y-4 text-gray-700 text-sm leading-relaxed border-l-2 border-amber-500 pl-5 italic font-medium">
-                <p>
-                  "Founder and Managing Director of RBCC Engineering and Global Services Ltd. He holds a Bachelor's Degree in Electrical and Electronics Engineering and has practical experience in engineering, construction, project management, technical design, and business development.
-                  He has earned various professional certifications and completed specialized training in engineering, construction, and technical disciplines. He is proficient in industry-standard software used for engineering design, lighting design, drafting, project planning, analysis, and documentation.
-                  Driven by excellence, integrity, and professionalism, he founded RBCC Engineering with a vision to provide reliable engineering and construction solutions that create lasting value for clients, communities, and stakeholders."
-                </p>
-                <p>
-                  "We remain dedicated to raising industry standards through innovation, integrity, and an unwavering
-                  focus on engineering excellence. When you partner with RBCC, you're choosing a team that treats every
-                  project as our own."
-                </p>
               </div>
             </div>
 
