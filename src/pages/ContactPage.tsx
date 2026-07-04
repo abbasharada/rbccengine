@@ -71,7 +71,7 @@ export default function ContactPage() {
             <div className="w-8 h-[2px] bg-gold-500" />
             <span className="text-gold-400 font-heading font-bold text-[11px] uppercase tracking-[0.2em]">Get In Touch</span>
           </div>
-          <h1 className="font-heading font-black text-white text-3xl md:text-4xl lg:text-5xl uppercase tracking-wide">
+          <h1 className="font-heading font-black text-gold-400 text-3xl md:text-4xl lg:text-5xl uppercase tracking-wide">
             Contact<br />
             <span className="text-gold-400">Us</span>
           </h1>

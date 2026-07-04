@@ -1,6 +1,6 @@
 import { useReveal } from '../hooks/useReveal';
 import { Link } from 'react-router-dom';
-import { Building2, Wrench, Zap, Sun, Droplets, PaintBucket, Users, Home, ShieldCheck, CheckCircle, ArrowRight } from 'lucide-react';
+import { ShieldCheck, CheckCircle, ArrowRight } from 'lucide-react';
 
 const services = [
   {
@@ -10,8 +10,8 @@ const services = [
     benefits: ['Architectural Design','Structural Design','Electrical Design','AutoCAD Drafting','BIM Modeling (Revit)','Lighting Design (DIALux)'],
     img1: '/images/dilux.jpeg',
     img2: '/images/dilux1.jpeg',
-    img3: '/images/solar.jpg', 
-    img4: '/images/solar6.jpg',
+    img3: '/images/dil.jpg', 
+    img4: '/images/dill.jpg',
     fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
@@ -43,13 +43,13 @@ const services = [
     benefits: ['Residential Construction', 'Commercial Construction', 'Renovation Works', 'Site Supervision'],
     img1: '/images/build.jpeg',
     img2: '/images/build1.jpeg',
-    img3: '/images/image4.jpg',
-    img4: '/images/image2.jpg',
+    img3: '/images/5.jpeg',
+    img4: '/images/17.jpeg',
     fallback: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
-   {
+  {
     icon: ShieldCheck,
-    title: 'Archtecture Department',
+    title: 'Architecture Department',
     desc: 'Our Architectural Department Delivers Innovative, functional, and sustainable design Solutions for residential, commercial, industrial, and institutional projects. we transform ideas into practical designs that meet clients needs while complying with industry standard and building regulations',
     benefits: ['Architectural Design', 'Building Planning', '2D & 3D Building Designs', 'Interior & Exterior Design', 'Construction Drawings', 'Building Approval Documentation', 'Site Planning & Supervision', 'Architectural Consultation'],
     img1: '/images/art.jpeg',
@@ -71,22 +71,22 @@ const services = [
   },
   {
     icon: ShieldCheck,
-    title: 'Automation (Coming Soon)',
+    title: 'Automation',
     desc: 'Our Technology Division is coming soon. Stay tuned for innovative solutions and services.',
     benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
-    img1: '/images/tech.jpg',
-    img2: '/images/solar2.jpg',
+    img1: '/images/au.jpg',
+    img2: '/images/auto.jpg',
     img3: '/images/soon.jpg',
     img4: '/images/tech1.jpg',
     fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: ShieldCheck,
-    title: 'Technology (Coming Soon)',
+    title: 'Tech Department (Coming Soon)',
     desc: 'Our Technology Division is coming soon. Stay tuned for innovative solutions and services.',
     benefits: ['Home automation', 'Security systems', 'Energy management', 'Smart controls'],
-    img1: '/images/tech.jpg',
-    img2: '/images/solar2.jpg',
+    img1: '/images/auto1.jpg',
+    img2: '/images/tech2.jpg',
     img3: '/images/soon.jpg',
     img4: '/images/tech1.jpg',
     fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -100,7 +100,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      {/* Hero Banner - Clear Presentation without Gradients */}
+      {/* Hero Banner */}
       <section ref={heroRef as React.RefObject<HTMLElement>} className="relative pt-24 pb-14 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/IMG-20260530-WA0015.jpg" alt="RBCC Engineering services"
@@ -122,36 +122,19 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services List */}
       <section ref={servicesRef as React.RefObject<HTMLElement>} className="py-12 md:py-14 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-12">
-            {services.map((service, index) => (
-              <div key={service.title} className={`reveal grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-
-                {/* 4-Image Balanced Grid Layout (2x2) */}
-                <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <div className="grid grid-cols-2 gap-2 relative overflow-hidden rounded-sm">
-                    <div className="relative">
-                      <img src={service.img1} alt={`${service.title} 1`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
-                      <div className="absolute top-0 left-0 w-1 h-full bg-gold-500" />
-                    </div>
-                    <img src={service.img2} alt={`${service.title} 2`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
-                    <img src={service.img3} alt={`${service.title} 3`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
-                    <img src={service.img4} alt={`${service.title} 4`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
-                    {/* Changed navy-950 to blue-950 */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-950/20 to-transparent pointer-events-none" />
-                  </div>
-                </div>
-
-                {/* Text Content Block */}
-                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+          <div className="space-y-16">
+            {services.map((service) => (
+              <div key={service.title} className="reveal grid lg:grid-cols-2 gap-8 items-center">
+                
+                {/* Text Content Block (Always First on Desktop & Mobile) */}
+                <div className="order-1">
                   <div className="flex items-center gap-3 mb-3">
-                    {/* Changed bg-navy-900 to bg-blue-600 */}
                     <div className="w-10 h-10 bg-blue-600 flex items-center justify-center">
                       <service.icon size={18} className="text-gold-400" />
                     </div>
-                    {/* Changed text-navy-900 to text-blue-900 */}
                     <h3 className="font-heading font-bold text-blue-900 text-lg">{service.title}</h3>
                   </div>
                   <p className="text-gray-600 text-sm leading-relaxed mb-5">{service.desc}</p>
@@ -168,6 +151,20 @@ export default function ServicesPage() {
                   </Link>
                 </div>
 
+                {/* 4-Image Grid Layout (Always Second) */}
+                <div className="order-2">
+                  <div className="grid grid-cols-2 gap-2 relative overflow-hidden rounded-sm">
+                    <div className="relative">
+                      <img src={service.img1} alt={`${service.title} 1`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
+                      <div className="absolute top-0 left-0 w-1 h-full bg-gold-500" />
+                    </div>
+                    <img src={service.img2} alt={`${service.title} 2`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
+                    <img src={service.img3} alt={`${service.title} 3`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
+                    <img src={service.img4} alt={`${service.title} 4`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-950/20 to-transparent pointer-events-none" />
+                  </div>
+                </div>
+
               </div>
             ))}
           </div>
@@ -175,7 +172,6 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      {/* Changed bg-navy-900 to bg-blue-600 */}
       <section ref={ctaRef as React.RefObject<HTMLElement>} className="py-12 md:py-14 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">

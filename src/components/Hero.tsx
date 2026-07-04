@@ -28,7 +28,7 @@ const slides = [
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
-    image: '/images/fin.jpg',
+    image: '/images/14.jpeg',
     fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920',
     service: 'Smart Home Automation',
     slogan: 'Building a Stronger Future Through Engineering',
