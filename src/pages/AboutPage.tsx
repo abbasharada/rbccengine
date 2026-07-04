@@ -143,7 +143,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
           <div className="max-w-xl mb-10 reveal">
             <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">Executive Leadership</span>
             <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">
-              Board of Directors
+              Leadership
             </h2>
           </div>
 
@@ -181,7 +181,7 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
                 <div className="pt-2 border-t border-gray-200">
                   <p className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
                     Thank you for choosing RBCC Engineering Ltd.<br />
-                    <span className="text-amber-600 font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
+                    <span className="text-blue font-heading text-xs block mt-1">Engr. Rabiu Lawan Muhammad</span>
                     <span className="text-gray-400 font-sans text-[9px] block font-normal">Founder & C.E.O</span>
                   </p>
                 </div>
@@ -248,7 +248,6 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
       <section ref={valuesRef as React.RefObject<HTMLElement>} className="py-14 md:py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-xl mx-auto mb-10 reveal">
-            <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">What Drives Us</span>
             <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Core Values</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -283,7 +282,6 @@ Through skilled workmanship, technical expertise, and a commitment to continuous
       <section className="py-14 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-xl mx-auto mb-10 reveal">
-            <span className="font-heading font-bold text-amber-500 text-[11px] uppercase tracking-widest block mb-2">Our Journey</span>
             <h2 className="font-heading font-black text-blue-900 text-2xl md:text-3xl uppercase tracking-tight">Milestones</h2>
           </div>
           <div className="relative reveal">
