@@ -36,8 +36,8 @@ const boardMembers = [
     img: '/images/arch.jpg'
   },
   { 
-    name: 'Musa Musa Kabir', 
-    title: 'Director of Global Projects & Strategy',
+    name: 'Aliyu Muhammad Hussain', 
+    title: 'Head, Finishig Services Department',
     img: '/images/las.jpg'
   },
 ];
