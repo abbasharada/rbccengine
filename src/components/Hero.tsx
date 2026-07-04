@@ -82,10 +82,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section id="home" className="relative h-screen min-h-[580px] flex flex-col justify-center overflow-hidden pt-12">
+      {/* Hero Section - Swapped h-screen to specific aspect configurations with reduced heights */}
+      <section id="home" className="relative w-full aspect-[4/5] sm:aspect-[4/3] md:h-[520px] lg:h-[600px] flex flex-col justify-center overflow-hidden pt-28">
 
-        {/* Background Slides - Clean & Filterless Visual Presentation */}
+        {/* Background Slides - Swapped object-contain to object-cover to fit perfectly */}
         <div className="absolute inset-0 z-0">
           {slides.map((slide, index) => (
             <div
@@ -95,14 +95,14 @@ export default function Hero() {
               <img
                 src={slide.image}
                 alt={slide.service}
-                className="w-full h-full object-contain object-center"
+                className="w-full h-full object-cover object-center"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = slide.fallback; }}
                 onLoad={() => handleImageLoad(index)}
               />
             </div>
           ))}
-          {/* Subtle natural dark overlay to ensure white typography remains completely readable against background images */}
-          <div className="absolute inset-0 bg-navy-950/40" />
+          {/* Enhanced readability overlay layer */}
+          <div className="absolute inset-0 bg-slate-950/50" />
         </div>
 
         {/* Service Dots Indicator - Restored Side Indicator Elements */}
@@ -122,21 +122,21 @@ export default function Hero() {
         </div>
 
         {/* Content Panel Area */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-6">
           <div className="max-w-2xl drop-shadow-lg">
-            <h1 className="font-heading font-black text-white leading-tight text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem]">
+            <h1 className="font-heading font-black text-white leading-tight text-2xl sm:text-4xl md:text-5xl lg:text-[3.25rem]">
               Building a Stronger<br />
               Future Through<br />
               <span className="text-amber-400">Engineering</span>
             </h1>
-            <p className="mt-4 text-white/95 text-sm md:text-base font-medium leading-relaxed max-w-lg">
+            <p className="mt-3 text-white/95 text-xs sm:text-sm md:text-base font-medium leading-relaxed max-w-lg">
               Premium construction, civil engineering, and infrastructure solutions across Nigeria — delivered with precision and professionalism.
             </p>
-            <div className="flex flex-wrap gap-3 mt-7">
-              <Link to="/projects" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-navy-950 px-6 py-3 rounded font-bold text-xs uppercase tracking-wider inline-flex items-center gap-2 transition-colors shadow-lg">
-                Our Projects <ArrowRight size={14} />
+            <div className="flex flex-wrap gap-2.5 mt-5">
+              <Link to="/projects" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-navy-950 px-5 py-2.5 rounded font-bold text-[11px] uppercase tracking-wider inline-flex items-center gap-2 transition-colors shadow-lg">
+                Our Projects <ArrowRight size={13} />
               </Link>
-              <button onClick={() => scrollTo('contact')} className="btn-outline border-2 border-white hover:border-amber-400 hover:text-amber-400 text-white px-6 py-3 rounded font-bold text-xs uppercase tracking-wider transition-all bg-transparent backdrop-blur-sm">
+              <button onClick={() => scrollTo('contact')} className="btn-outline border-2 border-white hover:border-amber-400 hover:text-amber-400 text-white px-5 py-2.5 rounded font-bold text-[11px] uppercase tracking-wider transition-all bg-transparent backdrop-blur-sm">
                 Request a Quote
               </button>
             </div>
