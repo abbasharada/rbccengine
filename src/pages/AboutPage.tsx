@@ -6,7 +6,7 @@ const stats = [
   { v: '50+', l: 'Projects Delivered' },
   { v: '15+', l: 'Years Experience' },
   { v: '50+', l: 'Expert Engineers' },
-  { v: '100+', l: 'Satisfied Clients' },
+  { v: '50+', l: 'Clients' },
 ];
 
 const values = [
@@ -18,8 +18,8 @@ const values = [
 
 const milestones = [
   { year: '2025', event: 'RBCC Engineering incorporated in Nigeria' },
-  { year: '2015', event: 'Expanded operations to Northern Nigeria' },
-  { year: '2022', event: 'Launched Solar Energy division' },
+  { year: '2025', event: 'Expanded operations to Northern Nigeria' },
+  { year: '2025', event: 'Launched Solar Energy division' },
   { year: '2026', event: '100+ projects milestone achieved' },
 ];
 
