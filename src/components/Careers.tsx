@@ -63,7 +63,7 @@ export default function Careers() {
           </div>
           <h1 className="font-heading font-black text-white text-3xl md:text-4xl">
             Build Your Career<br />
-            <span className="text-gold-400">With RBCC</span>
+            <span className="text-gold-400">With RBCC </span>
           </h1>
           <p className="text-white/60 text-sm mt-3 max-w-xl leading-relaxed">
             Join a growing team of engineering professionals dedicated to building a stronger Nigeria.
@@ -76,7 +76,7 @@ export default function Careers() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="reveal mb-8">
             <span className="section-heading">Why Join Us</span>
-            <h2 className="section-title">Work at RBCC Engineering</h2>
+            <h2 className="section-title">Work at RBCC</h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
@@ -109,7 +109,7 @@ export default function Careers() {
                 <p className="font-heading font-bold text-white text-lg md:text-xl leading-tight">
                   "Our people are our greatest<br />engineering asset."
                 </p>
-                <p className="text-gold-400 text-xs mt-2 uppercase tracking-widest">RBCC Engineering</p>
+                <p className="text-gold-400 text-xs mt-2 uppercase tracking-widest">RBCC Engineering & Global Services</p>
               </div>
             </div>
           </div>
