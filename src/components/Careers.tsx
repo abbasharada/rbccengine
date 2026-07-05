@@ -63,7 +63,7 @@ export default function Careers() {
           </div>
           <h1 className="font-heading font-black text-white text-3xl md:text-4xl">
             Build Your Career<br />
-            <span className="text-gold-400">With RBCC Engineering</span>
+            <span className="text-gold-400">With RBCC</span>
           </h1>
           <p className="text-white/60 text-sm mt-3 max-w-xl leading-relaxed">
             Join a growing team of engineering professionals dedicated to building a stronger Nigeria.
