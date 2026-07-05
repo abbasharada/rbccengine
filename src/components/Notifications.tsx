@@ -39,8 +39,8 @@ export default function Notifications() {
         </div>
       </section>
 
-      {/* Filter Bar */}
-      <section className="bg-white border-b border-gray-100 sticky top-16 z-40">
+      {/* Filter Bar (Updated background & inputs to contrast with main blue section) */}
+      <section className="bg-gray-50 border-b border-gray-200 sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row gap-3 py-3">
             {/* Search */}
@@ -51,7 +51,7 @@ export default function Notifications() {
                 placeholder="Search notices..."
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                className="w-full pl-9 pr-4 py-2 border border-gray-200 text-sm focus:outline-none focus:border-blue-900 transition-colors"
+                className="w-full pl-9 pr-4 py-2 border border-gray-200 bg-white text-sm focus:outline-none focus:border-blue-900 transition-colors"
               />
             </div>
             {/* Category Tabs */}
@@ -74,19 +74,20 @@ export default function Notifications() {
         </div>
       </section>
 
-      {/* Notices List */}
-      <section className="py-10 bg-gray-50">
+      {/* Notices List (Changed bg-gray-50 to bg-blue-900) */}
+      <section className="py-10 bg-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {filtered.length === 0 ? (
             <div className="text-center py-16">
-              <Bell size={32} className="text-gray-300 mx-auto mb-3" />
-              <p className="font-heading font-bold text-gray-500 text-sm">No notices found</p>
-              <p className="text-gray-400 text-xs mt-1">Try adjusting your search or filter</p>
+              <Bell size={32} className="text-white/40 mx-auto mb-3" />
+              <p className="font-heading font-bold text-white text-sm">No notices found</p>
+              <p className="text-white/60 text-xs mt-1">Try adjusting your search or filter</p>
             </div>
           ) : (
             <div className="space-y-3">
               {filtered.map((notice: Notice) => (
-                <div key={notice.id} className={`bg-white border ${notice.urgent ? 'border-amber-300' : 'border-gray-100'} p-5 hover:shadow-md transition-shadow`}>
+                /* Notification Card remains clean white */
+                <div key={notice.id} className={`bg-white border ${notice.urgent ? 'border-amber-400 border-2' : 'border-gray-100'} p-5 shadow-sm hover:shadow-md transition-shadow rounded-sm`}>
                   <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                     <div className="flex-1 min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-2">
@@ -125,14 +126,14 @@ export default function Notifications() {
             </div>
           )}
 
-          {/* Footer note */}
-          <div className="mt-8 p-4 bg-blue-600/5 border border-blue-600/10 text-center">
-            <p className="text-gray-500 text-xs">
+          {/* Footer note (Adjusted colors to look perfect on top of the blue background) */}
+          <div className="mt-8 p-4 bg-blue-950/40 border border-blue-800 text-center rounded-sm">
+            <p className="text-white/80 text-xs">
               For official correspondence regarding any notice, contact{' '}
-              <a href="mailto:Rbccengineering@gmail.com" className="text-blue-900 font-semibold hover:text-gold-600 transition-colors">
+              <a href="mailto:Rbccengineering@gmail.com" className="text-gold-400 font-semibold hover:text-gold-500 transition-colors">
                 Rbccengineering@gmail.com
               </a>{' '}
-              or call <a href="tel:+2348032570597" className="text-blue-900 font-semibold hover:text-gold-600 transition-colors">0803 257 0597</a>
+              or call <a href="tel:+2348032570597" className="text-gold-400 font-semibold hover:text-gold-500 transition-colors">0803 257 0597</a>
             </p>
           </div>
         </div>
