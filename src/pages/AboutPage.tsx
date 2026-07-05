@@ -150,13 +150,20 @@ export default function AboutPage() {
                 <h3 className="font-heading font-black text-blue-900 text-xl md:text-2xl uppercase tracking-wide">Engr. Rabiu Lawan Muhammad</h3>
                 <p className="text-blue-900 text-[11px] font-black uppercase tracking-wider">Founder / CEO, RBCC</p>
                 <div className="space-y-4 text-gray-700 text-sm leading-relaxed border-l-2 border-amber-500 pl-5 italic font-medium">
-                  <p>"Driven by excellence, integrity, and professionalism, he founded RBCC Engineering with a vision to provide reliable engineering and construction solutions."</p>
+                  <p>"Founder and Managing Director of RBCC Engineering and Global Services Ltd. He holds a Bachelor's Degree in Electrical and Electronics Engineering and has practical experience in engineering, construction, project management, technical design, and business development.
+
+He has earned various professional certifications and completed specialized training in engineering, construction, and technical disciplines. He is proficient in industry-standard software used for engineering design, lighting design, drafting, project planning, analysis, and documentation.
+
+Driven by excellence, integrity, and professionalism, he founded RBCC Engineering with a vision to provide reliable engineering and construction solutions that create lasting value for clients, communities, and stakeholders."</p>
                 </div>
               </div>
 
               <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 space-y-3">
                 <p className="font-semibold text-blue-900 text-sm">Welcome to RBCC Engineering and Global Services Ltd.</p>
-                <p className="text-gray-600 text-xs leading-relaxed">Thank you for visiting our website. We are committed to delivering professional engineering and construction services.</p>
+                <p className="text-gray-600 text-xs leading-relaxed">
+Thank you for visiting our website. We are committed to delivering professional engineering, construction, and technical services with excellence, integrity, and dedication. Our goal is to provide innovative and dependable solutions that exceed expectations while maintaining the highest standards of quality, safety, and professionalism.
+We value the trust our clients place in us and look forward to building lasting relationships through exceptional service and successful project delivery.
+Thank you for choosing RBCC Engineering and Global Services Ltd.</p>
                 <div className="pt-2 border-t border-gray-200">
                   <div className="text-[10px] font-bold text-blue-950 uppercase tracking-wide">
                     Thank you for choosing RBCC<br />

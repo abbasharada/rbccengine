@@ -28,7 +28,7 @@ export default function Careers() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Build specialized message format payload for WhatsApp recruitment
     const whatsappNumber = '2348032570597';
     const textPayload = `Hello RBCC Engineering Recruitment,\n\nI would like to submit my application details:\n\n` +
@@ -43,7 +43,7 @@ export default function Careers() {
 
     await new Promise(r => setTimeout(r, 600));
     setApplied(true);
-    
+
     // Launch WhatsApp interface connection
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
@@ -81,12 +81,13 @@ export default function Careers() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {values.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="reveal p-5 border border-gray-100 bg-gray-50 hover:border-gold-500/40 hover:bg-white transition-all">
-                <div className="w-10 h-10 bg-blue-600 flex items-center justify-center mb-3">
-                  <Icon size={17} className="text-gold-400" />
+              /* Beautiful Blue Hover added here */
+              <div key={title} className="reveal p-5 border border-gray-100 bg-gray-50 hover:bg-blue-900 hover:border-blue-900 group hover:scale-[1.02] transition-all duration-300 rounded-sm shadow-sm">
+                <div className="w-10 h-10 bg-blue-600 flex items-center justify-center mb-3 group-hover:bg-gold-500 transition-colors">
+                  <Icon size={17} className="text-gold-400 group-hover:text-blue-950 transition-colors" />
                 </div>
-                <h3 className="font-heading font-bold text-blue-900 text-sm mb-1.5">{title}</h3>
-                <p className="text-gray-600 text-sm leading-snug">{desc}</p>
+                <h3 className="font-heading font-bold text-blue-900 group-hover:text-gold-400 text-sm mb-1.5 transition-colors">{title}</h3>
+                <p className="text-gray-600 group-hover:text-white/80 text-sm leading-snug transition-colors">{desc}</p>
               </div>
             ))}
           </div>
@@ -125,19 +126,20 @@ export default function Careers() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {positions.map(({ title, dept, location, type }) => (
-              <div key={title} className="bg-white border border-gray-100 p-5 hover:border-gold-500/50 hover:shadow-md transition-all group">
+              /* Beautiful Blue Hover added here */
+              <div key={title} className="bg-white border border-gray-100 p-5 hover:bg-blue-800 hover:border-blue-800 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group rounded-sm shadow-sm">
                 <div className="flex items-start justify-between gap-2 mb-3">
-                  <span className="bg-blue-600 text-gold-400 font-heading font-bold text-[9px] uppercase tracking-widest px-2.5 py-1">{dept}</span>
-                  <span className="text-gray-400 text-[10px] border border-gray-200 px-2 py-0.5">{type}</span>
+                  <span className="bg-blue-600 text-gold-400 group-hover:bg-gold-500 group-hover:text-blue-950 font-heading font-bold text-[9px] uppercase tracking-widest px-2.5 py-1 transition-colors">{dept}</span>
+                  <span className="text-gray-400 group-hover:text-white/60 text-[10px] border border-gray-200 group-hover:border-white/20 px-2 py-0.5 transition-colors">{type}</span>
                 </div>
-                <h3 className="font-heading font-bold text-blue-900 text-sm mb-2 group-hover:text-gold-600 transition-colors">{title}</h3>
-                <div className="flex items-center gap-1.5 text-gray-500">
+                <h3 className="font-heading font-bold text-blue-900 group-hover:text-white text-sm mb-2 transition-colors">{title}</h3>
+                <div className="flex items-center gap-1.5 text-gray-500 group-hover:text-white/70 transition-colors">
                   <MapPin size={11} />
                   <span className="text-xs">{location}</span>
                 </div>
                 <button
                   onClick={() => document.getElementById('apply-form')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="mt-3.5 flex items-center gap-1.5 text-gold-600 hover:text-gold-700 font-heading font-bold text-[10px] uppercase tracking-wide transition-colors">
+                  className="mt-3.5 flex items-center gap-1.5 text-gold-600 group-hover:text-gold-400 hover:text-gold-700 font-heading font-bold text-[10px] uppercase tracking-wide transition-colors">
                   Apply Now <ChevronRight size={12} />
                 </button>
               </div>
@@ -145,7 +147,7 @@ export default function Careers() {
           </div>
 
           {/* Application Form */}
-          <div id="apply-form" className="bg-white border border-gray-100 p-6 md:p-8 max-w-2xl">
+          <div id="apply-form" className="bg-white border border-gray-100 p-6 md:p-8 max-w-2xl shadow-sm rounded-sm">
             <h3 className="font-heading font-bold text-blue-900 text-lg mb-1">Submit Your Application</h3>
             <p className="text-gray-500 text-sm mb-6">Not seeing the right role? Send us your CV over WhatsApp — we are always looking for talent.</p>
 
