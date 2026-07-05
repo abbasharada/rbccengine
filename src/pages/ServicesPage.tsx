@@ -122,36 +122,41 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services List */}
-      <section ref={servicesRef as React.RefObject<HTMLElement>} className="py-12 md:py-14 bg-white">
+      {/* Services List (Changed bg-white to bg-blue-900 as requested) */}
+      <section ref={servicesRef as React.RefObject<HTMLElement>} className="py-16 bg-blue-900 border-b border-blue-950/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
+          <div className="space-y-20">
             {services.map((service) => (
-              <div key={service.title} className="reveal grid lg:grid-cols-2 gap-8 items-center">
-                
-                {/* Text Content Block (Always First on Desktop & Mobile) */}
+              <div key={service.title} className="reveal grid lg:grid-cols-2 gap-8 items-center border border-blue-800 p-6 rounded-sm bg-blue-950/20 shadow-md">
+
+                {/* Text Content Block */}
                 <div className="order-1">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-blue-600 flex items-center justify-center">
+                  {/* Service Header Area - Styled exactly like the sample image drawing */}
+                  <div className="flex items-center gap-4 mb-4 pb-2 border-b border-blue-800/65">
+                    <div className="w-10 h-10 bg-blue-600 flex items-center justify-center rounded-sm">
                       <service.icon size={18} className="text-gold-400" />
                     </div>
-                    <h3 className="font-heading font-bold text-blue-900 text-lg">{service.title}</h3>
+                    {/* Name of services changed to white */}
+                    <h3 className="font-heading font-bold text-white text-lg md:text-xl tracking-wide">{service.title}</h3>
                   </div>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-5">{service.desc}</p>
+                  
+                  <p className="text-white/70 text-sm leading-relaxed mb-5">{service.desc}</p>
+                  
                   <div className="grid grid-cols-2 gap-2 mb-5">
                     {service.benefits.map((b) => (
                       <div key={b} className="flex items-center gap-2">
-                        <CheckCircle size={12} className="text-gold-500 flex-shrink-0" />
-                        <span className="text-gray-700 text-xs">{b}</span>
+                        <CheckCircle size={12} className="text-gold-400 flex-shrink-0" />
+                        <span className="text-white/85 text-xs">{b}</span>
                       </div>
                     ))}
                   </div>
-                  <Link to="/contact" className="inline-flex items-center gap-1.5 text-gold-600 hover:text-gold-700 font-heading font-bold text-[10px] uppercase tracking-wide transition-colors">
+                  
+                  <Link to="/contact" className="inline-flex items-center gap-1.5 text-gold-400 hover:text-gold-500 font-heading font-bold text-[10px] uppercase tracking-wide transition-colors">
                     Request Quote <ArrowRight size={12} />
                   </Link>
                 </div>
 
-                {/* 4-Image Grid Layout (Always Second) */}
+                {/* 4-Image Grid Layout */}
                 <div className="order-2">
                   <div className="grid grid-cols-2 gap-2 relative overflow-hidden rounded-sm">
                     <div className="relative">
@@ -161,7 +166,7 @@ export default function ServicesPage() {
                     <img src={service.img2} alt={`${service.title} 2`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
                     <img src={service.img3} alt={`${service.title} 3`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
                     <img src={service.img4} alt={`${service.title} 4`} className="w-full h-28 sm:h-36 object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).src = service.fallback; }} />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-950/20 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-950/40 to-transparent pointer-events-none" />
                   </div>
                 </div>
 
