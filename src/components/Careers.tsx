@@ -30,7 +30,7 @@ export default function Careers() {
     e.preventDefault();
 
     // Build specialized message format payload for WhatsApp recruitment
-    const whatsappNumber = '2348032570597';
+    const whatsappNumber = '234903 573 7455';
     const textPayload = `Hello RBCC Engineering Recruitment,\n\nI would like to submit my application details:\n\n` +
       `• *Name:* ${form.name}\n` +
       `• *Email:* ${form.email}\n` +
