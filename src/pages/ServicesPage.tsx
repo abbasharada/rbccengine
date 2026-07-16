@@ -122,22 +122,27 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services List */}
-      <section ref={servicesRef as React.RefObject<HTMLElement>} className="py-12 md:py-14 bg-white">
+      {/* Services List (Kept background white as usual) */}
+      <section ref={servicesRef as React.RefObject<HTMLElement>} className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
             {services.map((service) => (
               <div key={service.title} className="reveal grid lg:grid-cols-2 gap-8 items-center">
-                
-                {/* Text Content Block (Always First on Desktop & Mobile) */}
+
+                {/* Text Content Block */}
                 <div className="order-1">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-blue-600 flex items-center justify-center">
-                      <service.icon size={18} className="text-gold-400" />
+                  
+                  {/* Icon & Title Header Container with Blue Background and White Text (Matching Image Sketch) */}
+                  <div className="flex items-center gap-3 mb-4 p-3 bg-blue-900 border border-blue-950 rounded-sm shadow-sm">
+                    <div className="w-8 h-8 bg-blue-700 flex items-center justify-center rounded-sm flex-shrink-0">
+                      <service.icon size={16} className="text-gold-400" />
                     </div>
-                    <h3 className="font-heading font-bold text-blue-900 text-lg">{service.title}</h3>
+                    {/* Name of service is perfectly white inside the blue box */}
+                    <h3 className="font-heading font-bold text-white text-base md:text-lg leading-snug">{service.title}</h3>
                   </div>
+                  
                   <p className="text-gray-600 text-sm leading-relaxed mb-5">{service.desc}</p>
+                  
                   <div className="grid grid-cols-2 gap-2 mb-5">
                     {service.benefits.map((b) => (
                       <div key={b} className="flex items-center gap-2">
@@ -146,12 +151,13 @@ export default function ServicesPage() {
                       </div>
                     ))}
                   </div>
+                  
                   <Link to="/contact" className="inline-flex items-center gap-1.5 text-gold-600 hover:text-gold-700 font-heading font-bold text-[10px] uppercase tracking-wide transition-colors">
                     Request Quote <ArrowRight size={12} />
                   </Link>
                 </div>
 
-                {/* 4-Image Grid Layout (Always Second) */}
+                {/* 4-Image Grid Layout */}
                 <div className="order-2">
                   <div className="grid grid-cols-2 gap-2 relative overflow-hidden rounded-sm">
                     <div className="relative">
