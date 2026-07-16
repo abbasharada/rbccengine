@@ -6,13 +6,13 @@ const slides = [
   {
     image: '/images/img2.jpg',
     fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    service: 'Planning for Modern Construction',
+    service: 'Professional Architectural Design & Planning for Modern Construction',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
     image: '/images/img1.jpg',
     fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    service: 'Planning for Modern Construction',
+    service: 'Professional Architectural Design & Planning for Modern Construction',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
@@ -102,7 +102,7 @@ export default function Hero() {
           {/* Small, clean Service Description Text */}
           <p className="text-[11px] sm:text-xs text-white font-bold uppercase tracking-wider mb-2.5 max-w-[90vw] drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
             {slides[current].service}
-          </p>
+          </p><br /><br /><br />
 
           <h1 className="font-heading font-black text-white leading-tight text-2xl sm:text-4xl md:text-5xl lg:text-[3.25rem]">
             Building a Stronger<br />
