@@ -6,31 +6,31 @@ const slides = [
   {
     image: '/images/img2.jpg',
     fallback: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    service: 'Mechanical & Electrical Services',
+    service: 'Planning for Modern Construction',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
     image: '/images/img1.jpg',
     fallback: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    service: 'Building Construction',
+    service: 'Planning for Modern Construction',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
     image: '/images/img3.jpg',
     fallback: 'https://images.pexels.com/photos/2577362/pexels-photo-2577362.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    service: 'Electrical Engineering',
+    service: 'Delivery Quality Construction projects with Skilled Supervision, safety, and precision',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
     image: '/images/img.jpg',
     fallback: 'https://images.pexels.com/photos/3577565/pexels-photo-3577565.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    service: 'Smart Home Automation',
+    service: 'Providing Reliable Solar Energy Solution for Homes, Businesses, and Industries',
     slogan: 'Building a Stronger Future Through Engineering',
   },
   {
     image: '/images/img4.jpg',
     fallback: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    service: 'Solar Energy Solutions',
+    service: 'Providing Reliable Solar Energy Solutions for Homes, Businesses, and Industries',
     slogan: 'Building a Stronger Future Through Engineering',
   },
 ];
@@ -98,14 +98,18 @@ export default function Hero() {
       {/* Content Panel Area */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-6">
         <div className="max-w-2xl drop-shadow-lg">
+          
+          {/* Small, clean Service Description Text */}
+          <p className="text-[11px] sm:text-xs text-white font-bold uppercase tracking-wider mb-2.5 max-w-[90vw] drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
+            {slides[current].service}
+          </p>
+
           <h1 className="font-heading font-black text-white leading-tight text-2xl sm:text-4xl md:text-5xl lg:text-[3.25rem]">
             Building a Stronger<br />
             Future Through<br />
             <span className="text-amber-400">Engineering</span>
           </h1>
-          <p className="mt-3 text-white/95 text-xs sm:text-sm md:text-base font-medium leading-relaxed max-w-lg">
-            Premium construction, civil engineering, and infrastructure solutions across Nigeria — delivered with precision and professionalism.
-          </p>
+          
           <div className="flex flex-wrap gap-2.5 mt-5">
             <Link to="/projects" className="btn-primary !bg-amber-500 hover:!bg-amber-600 text-navy-950 px-5 py-2.5 rounded font-bold text-[11px] uppercase tracking-wider inline-flex items-center gap-2 transition-colors shadow-lg">
               Our Projects <ArrowRight size={13} />
