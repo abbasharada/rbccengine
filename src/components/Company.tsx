@@ -24,14 +24,14 @@ export default function Company() {
             </h2>
             <div className="space-y-3.5 text-gray-600 text-sm leading-relaxed">
               <p>
-                <strong className="text-navy-900">RBCC Engineering and Global Services Ltd</strong> Welcome to RBCC Engineering and Global Services Ltd  a forward-thinking multidisciplinary engineering, construction, and technology company committed to delivering world-class solutions that drive sustainable development and create lasting value. We integrate engineering excellence, innovation, and modern technology to provide comprehensive services throughout the entire project lifecycle—from planning and design to execution, commissioning, and long-term support.
+                <strong className="text-navy-900">RBCC Engineering and Global Services Ltd</strong> Welcome to RBCC Engineering and Global Services Ltd  a forward-thinking multidisciplinary engineering, construction, and technology company committed to delivering world-class solutions that drive sustainable development and create lasting value. We integrate engineering excellence, innovation, and modern technology to provide comprehensive services throughout the entire project lifecycle from planning and design to execution, commissioning, and long-term support.
 With an unwavering commitment to quality, safety, integrity, and professionalism, RBCC delivers reliable, cost-effective, and innovative solutions tailored to the needs of clients across the residential, commercial, industrial, and public sectors. Our goal is not only to execute projects but to build enduring relationships founded on trust, excellence, and measurable results.
 As we continue to expand, RBCC is actively open to strategic investors, business partners, and organizations that share our vision of building a globally respected engineering and technology enterprise. Through collaboration, investment, and innovation, we seek to develop transformative solutions, expand into new markets, and contribute meaningfully to infrastructure development, technological advancement, and economic growth.
 Guided by excellence and driven by innovation, RBCC Engineering and Global Services Ltd is building today with the vision of engineering a better tomorrow.
               </p>
               <p>
                 With an unwavering focus on quality, safety, and client satisfaction, every project we deliver
-                meets the highest industry standards — completed on time, within budget, and built to last.
+                meets the highest industry standards, completed on time, within budget, and built to last.
               </p>
             </div>
             <div className="mt-6 pt-5 border-t border-gray-100">
