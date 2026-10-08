@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
           
             <p className="text-white/65 text-sm leading-relaxed mb-6">
               We combine technical excellence with proven construction methodologies to deliver
-              results that exceed expectations — on time and within budget.
+              results that exceed expectations, on time and within budget.
             </p>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}

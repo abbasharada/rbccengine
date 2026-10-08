@@ -83,7 +83,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Headquartered in Abuja with a regional office in Kano State, we have successfully delivered over 200 projects
-                  across Nigeria — ranging from residential complexes and commercial buildings to civil infrastructure and
+                  across Nigeria, ranging from residential complexes and commercial buildings to civil infrastructure and
                   renewable energy installations.
                 </p>
                 <p>
